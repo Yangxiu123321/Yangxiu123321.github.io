@@ -108,20 +108,24 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="MOD">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="[TOC] 一、环境准备1、代码下载在tensorflow官网上克隆tensorflow-1.11版本的源码，进入tensorflow目录。(git clone tensorflow1.11)。代码一般clone，我发现如果我直接下载zip文件的话，在编译的时候会出现找不到.git的警告。 2、安装相关的依赖包：​    a、swig b、python35  c、cmake  d、abseil(这">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在vs2017上编译tensorflow">
+<meta property="og:url" content="http://yoursite.com/2018/10/05/tensorflow/在vs2017上编译tensorflow/index.html">
 <meta property="og:site_name" content="MOD">
+<meta property="og:description" content="[TOC] 一、环境准备1、代码下载在tensorflow官网上克隆tensorflow-1.11版本的源码，进入tensorflow目录。(git clone tensorflow1.11)。代码一般clone，我发现如果我直接下载zip文件的话，在编译的时候会出现找不到.git的警告。 2、安装相关的依赖包：​    a、swig b、python35  c、cmake  d、abseil(这">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-05T02:47:19.205Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MOD">
+<meta name="twitter:title" content="在vs2017上编译tensorflow">
+<meta name="twitter:description" content="[TOC] 一、环境准备1、代码下载在tensorflow官网上克隆tensorflow-1.11版本的源码，进入tensorflow目录。(git clone tensorflow1.11)。代码一般clone，我发现如果我直接下载zip文件的话，在编译的时候会出现找不到.git的警告。 2、安装相关的依赖包：​    a、swig b、python35  c、cmake  d、abseil(这">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/05/tensorflow/在vs2017上编译tensorflow/"/>
 
 
 
@@ -131,7 +135,7 @@
   };
 </script>
 
-  <title>MOD</title>
+  <title>在vs2017上编译tensorflow | MOD</title>
   
 
 
@@ -178,8 +182,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,7 +219,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
   </li>
@@ -292,9 +295,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -326,11 +329,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/05/tensorflow/在vs2017上编译tensorflow/" itemprop="url">
-                  在vs2017上编译tensorflow
-                </a>
+          <h1 class="post-title" itemprop="name headline">在vs2017上编译tensorflow
               
             
           </h1>
@@ -421,9 +420,7 @@
       
 
       
-        
-          
-            <p>[TOC]</p>
+        <p>[TOC]</p>
 <h3 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h3><h4 id="1、代码下载"><a href="#1、代码下载" class="headerlink" title="1、代码下载"></a>1、代码下载</h4><p>在tensorflow官网上克隆tensorflow-1.11版本的源码，进入tensorflow目录。(git clone tensorflow1.11)。代码一般clone，我发现如果我直接下载zip文件的话，在编译的时候会出现找不到.git的警告。</p>
 <h4 id="2、安装相关的依赖包："><a href="#2、安装相关的依赖包：" class="headerlink" title="2、安装相关的依赖包："></a>2、安装相关的依赖包：</h4><p>​    a、swig</p>
 <pre><code>b、python35
@@ -456,8 +453,6 @@ d、abseil(这个在编译的时候本来会在动下载，但是我在tensorflo
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">reference <span class="keyword">operator</span>*() &#123; <span class="keyword">return</span> (*list_)[i_]; &#125;</span><br><span class="line"><span class="comment">// OpArgIterator的类中加入下面关于const的重载</span></span><br><span class="line">reference <span class="keyword">operator</span>*() <span class="keyword">const</span> &#123; <span class="keyword">return</span> (*list_)[i_]; &#125;</span><br></pre></td></tr></table></figure>
 <h4 id="3、vs编译启动"><a href="#3、vs编译启动" class="headerlink" title="3、vs编译启动"></a>3、vs编译启动</h4><p>右键ALL_BUILD-》生成,一段时间后再build/Release目录下就会生成相应的lib与dll文件。</p>
 
-          
-        
       
     </div>
 
@@ -477,193 +472,28 @@ d、abseil(这个在编译的时候本来会在动下载，但是我在tensorflo
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mod">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/top.bmp">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MOD">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/" itemprop="url">
-                  从头开始学tensorflow-模型建立与读取
-                </a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/" rel="next" title="从头开始学tensorflow-模型建立与读取">
+                <i class="fa fa-chevron-left"></i> 从头开始学tensorflow-模型建立与读取
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-09-11 19:44:50 / Updated at: 20:11:31" itemprop="dateCreated datePublished" datetime="2018-09-11T19:44:50+08:00">2018-09-11</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">in</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tensorflow/" itemprop="url" rel="index"><span itemprop="name">tensorflow</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count valine-comment-count" data-xid="/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="从头开始学tensorflow"><a href="#从头开始学tensorflow" class="headerlink" title="从头开始学tensorflow"></a>从头开始学tensorflow</h1><pre><code>在这篇博客中，我们将要学习如何使用神经网络来为我们服务，然后使用python和tensorflow来实现这些事情。在这个例子中，我将会使用如下特征来预测一辆车的价格：行驶的公里数、车龄、燃油类型。我们将仅预测一款车型的价格，因为我们的特征中没有关于品牌或汽车型号的数据。我们使用的车的型号时BWM系列1，我的数据下载来源于 [leboncoin.fr]( https://www.leboncoin.fr/).
-</code></pre><p>​    我们训练好的模型因该不会太好用，因为影响汽车价格的重要因素我们不是很具备，但我们的最终目的是保持简单的同时可以达到学习的效果。</p>
-<h2 id="一、数据的预处理"><a href="#一、数据的预处理" class="headerlink" title="一、数据的预处理"></a>一、数据的预处理</h2><p>​    第一步就是要归一化我们现有的数据，我们现在有的数据如下：</p>
-<ul>
-<li><p>定量的汽车行驶公里数，范围在0到350k之间。</p>
-</li>
-<li><p>燃料类型：二元数据柴油/汽油。</p>
-</li>
-<li><p>定量的车的年龄，范围在0到40之间。</p>
-</li>
-<li><p>定量车的价格，0到40k之间。</p>
-<p>使用平均值和标准偏差将公里数和年龄（均为定量）标准化。 目标是将所有数据带到相同的比例，通常在【-6，6】之间，此外，公里数将达到35万，年龄可达40年，体重值的变化不会以同样的方式影响年龄或公里数。 规范化的公式是：</p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -673,351 +503,18 @@ d、abseil(这个在编译的时候本来会在动下载，但是我在tensorflo
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/03/tensorflow/tensorflow基于linux上的安装/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mod">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/top.bmp">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MOD">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/03/tensorflow/tensorflow基于linux上的安装/" itemprop="url">
-                  tensorflow0
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-09-03 22:51:18" itemprop="dateCreated datePublished" datetime="2018-09-03T22:51:18+08:00">2018-09-03</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Updated at: 2018-10-05 09:17:05" itemprop="dateModified" datetime="2018-10-05T09:17:05+08:00">2018-10-05</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">in</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tensorflow/" itemprop="url" rel="index"><span itemprop="name">tensorflow</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/03/tensorflow/tensorflow基于linux上的安装/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count valine-comment-count" data-xid="/2018/09/03/tensorflow/tensorflow基于linux上的安装/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="一、python"><a href="#一、python" class="headerlink" title="一、python"></a>一、python</h3><p>1、如果是使用python下的环境的话，建议使用Anaconda，它的安装是非常方便的，安装完之后。安装编译好的tensorflow安装包。安装包的下载地址为<a href="https://github.com/fo40225/tensorflow-windows-wheel" target="_blank" rel="noopener">tensorflow</a> .<br>2、下载完成之后到该安装包的目录，pip install 安装包名。<br>3、import tensorflow as tf 时可能会出现numpy的错误，可以重新安装numpy。</p>
-<h3 id="二、C"><a href="#二、C" class="headerlink" title="二、C"></a>二、C</h3><p>1、tensorflow中有详细的教程。</p>
-<h3 id="三、CPP"><a href="#三、CPP" class="headerlink" title="三、CPP"></a>三、CPP</h3><p>[binary] (<a href="https://github.com/kecsap/tensorflow_cpp_packaging/releases/tag/Tensorflow_1.10.0fix1_git20180810_56e4ea40）" target="_blank" rel="noopener">https://github.com/kecsap/tensorflow_cpp_packaging/releases/tag/Tensorflow_1.10.0fix1_git20180810_56e4ea40）</a></p>
-<p>1、git clone tensorflow仓库<br>2、./configure<br>3、看网上的编译命令。<br>4、建议编译的机器内存为8G，不然编译的过程会出现中断问题。<br>5、在配置的过程中要配置AUX2，不然不能充分使用CPU的性能。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/22/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mod">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/top.bmp">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MOD">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/22/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-08-22 02:49:54" itemprop="dateCreated datePublished" datetime="2018-08-22T02:49:54+08:00">2018-08-22</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/08/22/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count valine-comment-count" data-xid="/2018/08/22/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -1038,8 +535,17 @@ d、abseil(这个在编译的时候本来会在动下载，但是我在tensorflo
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1101,6 +607,22 @@ d、abseil(这个在编译的时候本来会在动下载，但是我在tensorflo
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、环境准备"><span class="nav-number">1.</span> <span class="nav-text">一、环境准备</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、代码下载"><span class="nav-number">1.1.</span> <span class="nav-text">1、代码下载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、安装相关的依赖包："><span class="nav-number">1.2.</span> <span class="nav-text">2、安装相关的依赖包：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、编译abseil库。"><span class="nav-number">1.3.</span> <span class="nav-text">3、编译abseil库。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、其他配置"><span class="nav-number">1.4.</span> <span class="nav-text">4、其他配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、编译"><span class="nav-number">2.</span> <span class="nav-text">二、编译</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、cmake生成项目"><span class="nav-number">2.1.</span> <span class="nav-text">1、cmake生成项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、修改bug"><span class="nav-number">2.2.</span> <span class="nav-text">2、修改bug</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、vs编译启动"><span class="nav-number">2.3.</span> <span class="nav-text">3、vs编译启动</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1238,6 +760,10 @@ d、abseil(这个在编译的时候本来会在动下载，但是我在tensorflo
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
+
+
 
   
 
