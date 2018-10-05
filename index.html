@@ -309,6 +309,220 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/05/tensorflow/tensorflow-model中object-dection模型的训练/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="mod">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/top.bmp">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MOD">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/05/tensorflow/tensorflow-model中object-dection模型的训练/" itemprop="url">
+                  tensorflow model中object_dection模型的训练
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-10-05 17:18:34 / Updated at: 18:25:33" itemprop="dateCreated datePublished" datetime="2018-10-05T17:18:34+08:00">2018-10-05</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tensorflow/" itemprop="url" rel="index"><span itemprop="name">tensorflow</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/05/tensorflow/tensorflow-model中object-dection模型的训练/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count valine-comment-count" data-xid="/2018/10/05/tensorflow/tensorflow-model中object-dection模型的训练/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h3><h4 id="1、相关依赖的下载"><a href="#1、相关依赖的下载" class="headerlink" title="1、相关依赖的下载"></a>1、相关依赖的下载</h4><p>a、克隆tensorflow的model<br>[model]: <a href="https://github.com/tensorflow/models" target="_blank" rel="noopener">https://github.com/tensorflow/models</a></p>
+<p>b、到下面的GitHub上下载相关的python脚本</p>
+<ul>
+<li><p><a href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/xml_to_csv.py" target="_blank" rel="noopener">xml_to_csv.py</a></p>
+</li>
+<li><p><a href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/generate_tfrecord.py" target="_blank" rel="noopener">generate_tfrecord.py</a></p>
+</li>
+<li><p><a href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/Object_detection_image.py" target="_blank" rel="noopener">Object_detection_image.py</a></p>
+</li>
+<li><p><a href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/Object_detection_video.py" target="_blank" rel="noopener">Object_detection_video.py</a></p>
+</li>
+<li><p><a href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/Object_detection_webcam.py" target="_blank" rel="noopener">Object_detection_webcam.py</a></p>
+<p>上面的脚本在以后的数据处理和模型预测中有用。</p>
+</li>
+</ul>
+<p>c、到model zoon下载相关的模型。model zoon的连接可以在g3doc/detection_model_zoo.md下获得。下载之后将模型文件解压到object_dection目录。</p>
+<p>d、下载<a href="https://github.com/tzutalin/labelImg" target="_blank" rel="noopener">LabelImg GitHub link</a>，这个工具用来生成图片的XML文件。</p>
+<h3 id="2、文件目录配置"><a href="#2、文件目录配置" class="headerlink" title="2、文件目录配置"></a>2、文件目录配置</h3><p>​    进入\models\research\object_detection目录中，建立training文件夹、images/train文件夹、images\test文件夹、inference_graph文件夹。</p>
+<p>a、images/train &amp;&amp; images/test</p>
+<p>train下面放训练图片，test下面放测试图片。</p>
+<p>b、training/labelmap.pbtxt</p>
+<p>training下面建立一个叫作labelmap.pbtxt的文件。这个文件的作用是声明物体的类别，他的文件格式如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">item &#123;</span><br><span class="line">  id: <span class="number">1</span></span><br><span class="line">  name: 'raccoon'</span><br><span class="line">&#125;</span><br><span class="line">item &#123;</span><br><span class="line">  id: <span class="number">2</span></span><br><span class="line">  name: 'kabuqoi'</span><br><span class="line">&#125;</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">item &#123;</span><br><span class="line">  id: n</span><br><span class="line">  name: 'kab'</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>他的id编号0为预留的，所以从1开始。name代表每一个id的不同名称，用于在实际工程中的类别显示。</p>
+<p>c、training/xxxxx.config</p>
+<p>次文件是模型的配置文件，当你在model zoon下载模型之后，你可以在object_detection\samples\configs目录下找到对应的配置文件。eg:sd_mobilenet_v1_coco模型你就可以选择ssd_mobilenet_v1_pets.config作为该模型的配置文件。下面贴出次模型的配置，其他模型可以参考这个。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1、分类的种类数目</span></span><br><span class="line">num_classes: <span class="number">1</span></span><br><span class="line"><span class="comment">// 2、model zoon下载模型文件的目录</span></span><br><span class="line">fine_tune_checkpoint: <span class="string">"E:\\tensorflow\\models\\android_Pikachu\\models\\research\\object_detection\\ssd_mobilenet_v1_coco_2018_01_28\\model.ckpt"</span></span><br><span class="line"><span class="comment">// 3、输入数据</span></span><br><span class="line">train_input_reader: &#123;</span><br><span class="line">  tf_record_input_reader &#123;</span><br><span class="line">    input_path: <span class="string">"E:\\tensorflow\\models\\android_Pikachu\\models\\research\\object_detection\\train.record"</span></span><br><span class="line">  &#125;</span><br><span class="line">  label_map_path: <span class="string">"E:\\tensorflow\\models\\android_Pikachu\\models\\research\\object_detection\\training\labelmap.pbtxt"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 4、测试数据</span></span><br><span class="line">eval_config: &#123;</span><br><span class="line">  metrics_set: <span class="string">"coco_detection_metrics"</span></span><br><span class="line">  num_examples: <span class="number">40</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">eval_input_reader: &#123;</span><br><span class="line">  tf_record_input_reader &#123;</span><br><span class="line">    input_path: <span class="string">"E:\\tensorflow\\models\\android_Pikachu\\models\\research\\object_detection\\test.record"</span></span><br><span class="line">  &#125;</span><br><span class="line">  label_map_path: <span class="string">"E:\\tensorflow\\models\\android_Pikachu\\models\\research\\object_detection\\training\labelmap.pbtxt"</span></span><br><span class="line">  shuffle: <span class="literal">false</span></span><br><span class="line">  num_readers: <span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的record文件的生成后面有讲。</p>
+<p>d、inference_graph放置训练好的模型。</p>
+<h4 id="3、生成准备文件"><a href="#3、生成准备文件" class="headerlink" title="3、生成准备文件"></a>3、生成准备文件</h4><p>a、环境配置</p>
+<p>打开anaconda，进入装有tensorflow的虚拟环境中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">cd 到research/</span><br><span class="line">1、编译protobuf文件</span><br><span class="line"># From tensorflow/models/research/</span><br><span class="line">protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto</span><br><span class="line">2、设置python的路径</span><br><span class="line">set PYTHONPATH=E:\tensorflow\models\android_Pikachu\models\research\object_detection;</span><br><span class="line">E:\tensorflow\models\android_Pikachu\models\research;</span><br><span class="line">E:\tensorflow\models\android_Pikachu\models\research\slim;</span><br><span class="line">E:\tensorflow\models\android_Pikachu\models</span><br></pre></td></tr></table></figure>
+<p>b、构建record文件</p>
+<p>用labelImg生成每张图片的XML文件，XML文件的目录与图片的目录一致。</p>
+<p>在object-dection目录执行下面的脚本</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python xml_to_csv.py</span><br><span class="line"><span class="comment"># 这条命令将会在images目录下生成相关的csv文件</span></span><br></pre></td></tr></table></figure>
+<p>修改generate_tfrecord.py下面的部分，有几类就改成多少。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TO-DO replace this with label map</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">class_text_to_int</span><span class="params">(row_label)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> row_label == <span class="string">'nine'</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    <span class="keyword">elif</span> row_label == <span class="string">'ten'</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">2</span></span><br><span class="line">    <span class="keyword">elif</span> row_label == <span class="string">'jack'</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">3</span></span><br><span class="line">    <span class="keyword">elif</span> row_label == <span class="string">'queen'</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">4</span></span><br><span class="line">    <span class="keyword">elif</span> row_label == <span class="string">'king'</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">5</span></span><br><span class="line">    <span class="keyword">elif</span> row_label == <span class="string">'ace'</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">6</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">None</span></span><br></pre></td></tr></table></figure>
+<p>运行下面的代码，将会生成record文件。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python generate_tfrecord.py --csv_input=images\train_labels.csv --image_dir=images\train --output_path=train.record</span><br><span class="line"></span><br><span class="line">python generate_tfrecord.py --csv_input=images\test_labels.csv --image_dir=images\test --output_path=test.record</span><br></pre></td></tr></table></figure>
+<h3 id="二、模型训练"><a href="#二、模型训练" class="headerlink" title="二、模型训练"></a>二、模型训练</h3><h4 id="1、训练"><a href="#1、训练" class="headerlink" title="1、训练"></a>1、训练</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config</span><br></pre></td></tr></table></figure>
+<p>在training目录下会产生ckpt的参数文件，使用下面的命令来导出冻结参数与计算图的文件。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/ssd_mobilenet_v1_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph</span><br></pre></td></tr></table></figure>
+<p>在inference_graph目录下找到冻结图的文件。</p>
+<h4 id="2、tensorboard"><a href="#2、tensorboard" class="headerlink" title="2、tensorboard"></a>2、tensorboard</h4><p>用tensroboard可以观察训练的过程。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tensorboard --logdir=training</span><br></pre></td></tr></table></figure>
+<h3 id="三、模型测试"><a href="#三、模型测试" class="headerlink" title="三、模型测试"></a>三、模型测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python Object_detection_image.py</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/05/tensorflow/vs2017上运行第一个tensorflow程序/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1235,7 +1449,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
