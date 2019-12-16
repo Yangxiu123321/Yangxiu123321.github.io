@@ -125,7 +125,7 @@
 <meta property="og:site_name" content="MOD">
 <meta property="og:description" content="caffe训练模型写本教程的目的在于快速部署，节省工作时间。 一、安装caffe1、版本介绍caffe目前有三个版本,分别为： 1、微软的版本： 这个版本支持在windows上编译，如果你的开发平台在windows上的话，建议你使用这个版本，不过注意在搭建开发环境的时候一定要使用他推荐的不然会有许多问题。 2、原生版本 3、intel 版本 这个版本是经过intel的指令集加速的最优版本，运行速度">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-14T12:53:14.510Z">
+<meta property="og:updated_time" content="2019-12-16T12:30:07.607Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="caffe安装与训练">
 <meta name="twitter:description" content="caffe训练模型写本教程的目的在于快速部署，节省工作时间。 一、安装caffe1、版本介绍caffe目前有三个版本,分别为： 1、微软的版本： 这个版本支持在windows上编译，如果你的开发平台在windows上的话，建议你使用这个版本，不过注意在搭建开发环境的时候一定要使用他推荐的不然会有许多问题。 2、原生版本 3、intel 版本 这个版本是经过intel的指令集加速的最优版本，运行速度">
@@ -237,6 +237,14 @@
         
         
           
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
@@ -311,7 +319,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiu Yang">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/top2.jpg">
+      <meta itemprop="image" content="/images/lu.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -348,12 +356,24 @@
                 
               
 
-              <time title="创建时间：2018-12-14 17:18:34 / 修改时间：20:53:14" itemprop="dateCreated datePublished" datetime="2018-12-14T17:18:34+08:00">2018-12-14</time>
+              <time title="创建时间：2018-12-14 17:18:34" itemprop="dateCreated datePublished" datetime="2018-12-14T17:18:34+08:00">2018-12-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-12-16 20:30:07" itemprop="dateModified" datetime="2019-12-16T20:30:07+08:00">2019-12-16</time>
               
             
           </span>
@@ -453,10 +473,91 @@
     
     
 
+    <div>
+        
+            
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>caffe安装与训练</a></p>
+  <p><span>文章作者:</span>Xiu Yang</a></p>
+  <p><span>发布时间:</span>2018年12月14日 - 17:18:34</p>
+  <p><span>最后更新:</span>2019年12月16日 - 20:30:07</p>
+  <p><span>原始链接:</span><a href="/2018/12/14/caffe/安装与训练/" title="caffe安装与训练">http://yoursite.com/2018/12/14/caffe/安装与训练/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/12/14/caffe/安装与训练/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+        
+    </div>
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果你觉得这篇文章对你有帮助，或者想给我微小的工作一点点资瓷，请随意打赏</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/weichat.jpg" alt="Xiu Yang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/ali.jpg" alt="Xiu Yang 支付宝"/>
+        <p>支付宝</p>
+      </div>
     
 
     
 
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Xiu Yang</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/12/14/caffe/安装与训练/" title="caffe安装与训练">http://yoursite.com/2018/12/14/caffe/安装与训练/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -545,7 +646,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/top2.jpg"
+                src="/images/lu.png"
                 alt="Xiu Yang" />
             
               <p class="site-author-name" itemprop="name">Xiu Yang</p>
@@ -559,7 +660,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -584,7 +685,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -596,6 +699,20 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/yangxiu123321" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:neu_mod@sina.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
           
 
           
@@ -845,4 +962,9 @@
   
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<!-- 页面点击小红心，在末尾添加，避免找不到 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+<!-- 代码块复制功能 -->
+<script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
 </html>
