@@ -118,24 +118,24 @@
   </script>
 
 
-  <meta name="description" content="从头开始学tensorflow在这篇博客中，我们将要学习如何使用神经网络来为我们服务，然后使用python和tensorflow来实现这些事情。在这个例子中，我将会使用如下特征来预测一辆车的价格：行驶的公里数、车龄、燃油类型。我们将仅预测一款车型的价格，因为我们的特征中没有关于品牌或汽车型号的数据。我们使用的车的型号时BWM系列1，我的数据下载来源于 [leboncoin.fr]( https:/">
+  <meta name="description" content="简介《NO GAME NO LIFE 游戏人生》是榎宫祐著作并负责插画的轻小说，可以所作智斗吧。 感想我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从头开始学tensorflow-模型建立与读取">
-<meta property="og:url" content="http://blog.modmvp.club/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/index.html">
+<meta property="og:title" content="游戏人生">
+<meta property="og:url" content="http://blog.modmvp.club/2019/12/22/阅读/游戏人生/index.html">
 <meta property="og:site_name" content="MOD">
-<meta property="og:description" content="从头开始学tensorflow在这篇博客中，我们将要学习如何使用神经网络来为我们服务，然后使用python和tensorflow来实现这些事情。在这个例子中，我将会使用如下特征来预测一辆车的价格：行驶的公里数、车龄、燃油类型。我们将仅预测一款车型的价格，因为我们的特征中没有关于品牌或汽车型号的数据。我们使用的车的型号时BWM系列1，我的数据下载来源于 [leboncoin.fr]( https:/">
+<meta property="og:description" content="简介《NO GAME NO LIFE 游戏人生》是榎宫祐著作并负责插画的轻小说，可以所作智斗吧。 感想我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-11T12:11:31.728Z">
+<meta property="og:updated_time" content="2019-12-19T10:59:35.723Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="从头开始学tensorflow-模型建立与读取">
-<meta name="twitter:description" content="从头开始学tensorflow在这篇博客中，我们将要学习如何使用神经网络来为我们服务，然后使用python和tensorflow来实现这些事情。在这个例子中，我将会使用如下特征来预测一辆车的价格：行驶的公里数、车龄、燃油类型。我们将仅预测一款车型的价格，因为我们的特征中没有关于品牌或汽车型号的数据。我们使用的车的型号时BWM系列1，我的数据下载来源于 [leboncoin.fr]( https:/">
+<meta name="twitter:title" content="游戏人生">
+<meta name="twitter:description" content="简介《NO GAME NO LIFE 游戏人生》是榎宫祐著作并负责插画的轻小说，可以所作智斗吧。 感想我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一">
 
 
 
 
 
 
-  <link rel="canonical" href="http://blog.modmvp.club/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/"/>
+  <link rel="canonical" href="http://blog.modmvp.club/2019/12/22/阅读/游戏人生/"/>
 
 
 
@@ -145,7 +145,7 @@
   };
 </script>
 
-  <title>从头开始学tensorflow-模型建立与读取 | MOD</title>
+  <title>游戏人生 | MOD</title>
   
 
 
@@ -345,7 +345,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.modmvp.club/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/">
+    <link itemprop="mainEntityOfPage" href="http://blog.modmvp.club/2019/12/22/阅读/游戏人生/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiu Yang">
@@ -362,7 +362,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">从头开始学tensorflow-模型建立与读取
+          <h1 class="post-title" itemprop="name headline">游戏人生
               
             
           </h1>
@@ -387,12 +387,24 @@
                 
               
 
-              <time title="创建时间：2018-09-11 19:44:50 / 修改时间：20:11:31" itemprop="dateCreated datePublished" datetime="2018-09-11T19:44:50+08:00">2018-09-11</time>
+              <time title="创建时间：2019-12-22 09:14:01" itemprop="dateCreated datePublished" datetime="2019-12-22T09:14:01+08:00">2019-12-22</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-12-19 18:59:35" itemprop="dateModified" datetime="2019-12-19T18:59:35+08:00">2019-12-19</time>
               
             
           </span>
@@ -409,7 +421,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tensorflow/" itemprop="url" rel="index"><span itemprop="name">tensorflow</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/阅读/" itemprop="url" rel="index"><span itemprop="name">阅读</span></a></span>
 
                 
                 
@@ -424,8 +436,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/" itemprop="commentCount"></span>
+                <a href="/2019/12/22/阅读/游戏人生/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/12/22/阅读/游戏人生/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -453,20 +465,9 @@
       
 
       
-        <h1 id="从头开始学tensorflow"><a href="#从头开始学tensorflow" class="headerlink" title="从头开始学tensorflow"></a>从头开始学tensorflow</h1><pre><code>在这篇博客中，我们将要学习如何使用神经网络来为我们服务，然后使用python和tensorflow来实现这些事情。在这个例子中，我将会使用如下特征来预测一辆车的价格：行驶的公里数、车龄、燃油类型。我们将仅预测一款车型的价格，因为我们的特征中没有关于品牌或汽车型号的数据。我们使用的车的型号时BWM系列1，我的数据下载来源于 [leboncoin.fr]( https://www.leboncoin.fr/).
-</code></pre><p>​    我们训练好的模型因该不会太好用，因为影响汽车价格的重要因素我们不是很具备，但我们的最终目的是保持简单的同时可以达到学习的效果。</p>
-<h2 id="一、数据的预处理"><a href="#一、数据的预处理" class="headerlink" title="一、数据的预处理"></a>一、数据的预处理</h2><p>​    第一步就是要归一化我们现有的数据，我们现在有的数据如下：</p>
-<ul>
-<li><p>定量的汽车行驶公里数，范围在0到350k之间。</p>
-</li>
-<li><p>燃料类型：二元数据柴油/汽油。</p>
-</li>
-<li><p>定量的车的年龄，范围在0到40之间。</p>
-</li>
-<li><p>定量车的价格，0到40k之间。</p>
-<p>使用平均值和标准偏差将公里数和年龄（均为定量）标准化。 目标是将所有数据带到相同的比例，通常在【-6，6】之间，此外，公里数将达到35万，年龄可达40年，体重值的变化不会以同样的方式影响年龄或公里数。 规范化的公式是：</p>
-</li>
-</ul>
+        <h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>《NO GAME NO LIFE 游戏人生》是<a href="https://baike.baidu.com/item/%E6%A6%8E%E5%AE%AB%E7%A5%90" target="_blank" rel="noopener">榎宫祐</a>著作并负责插画的轻小说，可以所作智斗吧。</p>
+<h4 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h4><p>我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一章，里面的词语略显粗俗（全文几乎都是乳），这个粗俗不恰到好处，让人摸不着头脑。</p>
+<p>如果想了解这个，我认为还是看动画吧，动画做的不错，但是按照后面的情节发展，感觉是不会再动画的原因吧。感觉要读点其它类型的书了，我的价值观。。。下期读《三体》吧</p>
 
       
     </div>
@@ -480,6 +481,38 @@
     <div>
         
             
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>游戏人生</a></p>
+  <p><span>文章作者:</span>Xiu Yang</a></p>
+  <p><span>发布时间:</span>2019年12月22日 - 09:14:01</p>
+  <p><span>最后更新:</span>2019年12月19日 - 18:59:35</p>
+  <p><span>原始链接:</span><a href="/2019/12/22/阅读/游戏人生/" title="游戏人生">http://blog.modmvp.club/2019/12/22/阅读/游戏人生/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://blog.modmvp.club/2019/12/22/阅读/游戏人生/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
         
     </div>
 
@@ -523,7 +556,7 @@
     <strong>本文作者： </strong>Xiu Yang</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://blog.modmvp.club/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/" title="从头开始学tensorflow-模型建立与读取">http://blog.modmvp.club/2018/09/11/tensorflow/从头开始学tensorflow-模型建立与读取/</a>
+    <a href="http://blog.modmvp.club/2019/12/22/阅读/游戏人生/" title="游戏人生">http://blog.modmvp.club/2019/12/22/阅读/游戏人生/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -543,8 +576,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/03/tensorflow/tensorflow基于linux上的安装/" rel="next" title="tensorflow0">
-                <i class="fa fa-chevron-left"></i> tensorflow0
+              <a href="/2019/12/16/Digital-Image-Process/Digital-Image-Restoration-Classical/" rel="next" title="经典数字图像复原">
+                <i class="fa fa-chevron-left"></i> 经典数字图像复原
               </a>
             
           </div>
@@ -552,10 +585,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/05/tensorflow/在vs2017上编译tensorflow/" rel="prev" title="在vs2017上编译tensorflow">
-                在vs2017上编译tensorflow <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -713,7 +742,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#从头开始学tensorflow"><span class="nav-number">1.</span> <span class="nav-text">从头开始学tensorflow</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、数据的预处理"><span class="nav-number">1.1.</span> <span class="nav-text">一、数据的预处理</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#感想"><span class="nav-number">2.</span> <span class="nav-text">感想</span></a></li></ol></div>
             
 
           </div>
