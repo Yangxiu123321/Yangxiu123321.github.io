@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.modmvp.club/2019/12/22/opencv/opencv%E7%BC%96%E8%AF%91/</loc>
+    
+    <lastmod>2019-12-23T13:57:38.855Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segment_image/</loc>
+    
+    <lastmod>2019-12-19T15:14:17.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.modmvp.club/2019/12/22/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segement_cpp/</loc>
+    
+    <lastmod>2019-12-19T15:05:38.419Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segment_graph/</loc>
+    
+    <lastmod>2019-12-19T14:21:46.320Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.modmvp.club/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/</loc>
     
-    <lastmod>2019-12-19T10:59:35.723Z</lastmod>
+    <lastmod>2019-12-19T11:08:08.688Z</lastmod>
     
   </url>
   

@@ -342,7 +342,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.modmvp.club/2019/06/04/SLAM/代码阅读/">
+    <link itemprop="mainEntityOfPage" href="http://blog.modmvp.club/2019/12/19/Digital-Image-Process/论文阅读/segment_graph/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiu Yang">
@@ -361,8 +361,8 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/06/04/SLAM/代码阅读/" itemprop="url">
-                  代码阅读
+                <a class="post-title-link" href="/2019/12/19/Digital-Image-Process/论文阅读/segment_graph/" itemprop="url">
+                  基于图的高效图像分割-segment_graph函数解析
                 </a>
               
             
@@ -388,7 +388,7 @@
                 
               
 
-              <time title="创建时间：2019-06-04 18:13:29 / 修改时间：18:14:36" itemprop="dateCreated datePublished" datetime="2019-06-04T18:13:29+08:00">2019-06-04</time>
+              <time title="创建时间：2019-12-19 09:14:01 / 修改时间：22:21:46" itemprop="dateCreated datePublished" datetime="2019-12-19T09:14:01+08:00">2019-12-19</time>
             
 
             
@@ -410,7 +410,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SLAM/" itemprop="url" rel="index"><span itemprop="name">SLAM</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Digital-Image-Process/" itemprop="url" rel="index"><span itemprop="name">Digital-Image-Process</span></a></span>
 
                 
                 
@@ -425,8 +425,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/06/04/SLAM/代码阅读/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/06/04/SLAM/代码阅读/" itemprop="commentCount"></span>
+                <a href="/2019/12/19/Digital-Image-Process/论文阅读/segment_graph/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/12/19/Digital-Image-Process/论文阅读/segment_graph/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -456,7 +456,10 @@
       
         
           
-            
+            <h4 id="代码总览"><a href="#代码总览" class="headerlink" title="代码总览"></a>代码总览</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Segment a graph</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * Returns a disjoint-set forest representing the segmentation.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * num_vertices: number of vertices in graph.</span></span><br><span class="line"><span class="comment"> * num_edges: number of edges in graph</span></span><br><span class="line"><span class="comment"> * edges: array of edges.</span></span><br><span class="line"><span class="comment"> * c: constant for treshold function.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function">universe *<span class="title">segment_graph</span><span class="params">(<span class="keyword">int</span> num_vertices, <span class="keyword">int</span> num_edges, edge *edges, </span></span></span><br><span class="line"><span class="function"><span class="params">			<span class="keyword">float</span> c)</span> </span>&#123; </span><br><span class="line">  <span class="comment">// sort edges by weight将边的权重从小到大排列，权重越小代表相似度越高。</span></span><br><span class="line">  <span class="built_in">std</span>::sort(edges, edges + num_edges);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// make a disjoint-set forest创建随机森林来存储各个区域，每个像素代表一个节点</span></span><br><span class="line">  universe *u = <span class="keyword">new</span> universe(num_vertices);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// init thresholds</span></span><br><span class="line">  <span class="keyword">float</span> *threshold = <span class="keyword">new</span> <span class="keyword">float</span>[num_vertices];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num_vertices; i++)</span><br><span class="line">    threshold[i] = THRESHOLD(<span class="number">1</span>,c);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// for each edge, in non-decreasing weight order...</span></span><br><span class="line">  <span class="comment">// 相似度高的先合并</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num_edges; i++) &#123;</span><br><span class="line">    edge *pedge = &amp;edges[i];</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// components conected by this edge</span></span><br><span class="line">    <span class="comment">// u-&gt;find寻找父节点</span></span><br><span class="line">    <span class="keyword">int</span> a = u-&gt;find(pedge-&gt;a);</span><br><span class="line">    <span class="keyword">int</span> b = u-&gt;find(pedge-&gt;b);</span><br><span class="line">    <span class="comment">// 判单a和b是否相等，如果相等，说明是同一个父节点，在同一个区域所以不需要合并</span></span><br><span class="line">    <span class="keyword">if</span> (a != b) &#123;</span><br><span class="line">      <span class="keyword">if</span> ((pedge-&gt;w &lt;= threshold[a]) &amp;&amp;</span><br><span class="line">	  (pedge-&gt;w &lt;= threshold[b])) &#123;</span><br><span class="line">	u-&gt;join(a, b);</span><br><span class="line">	a = u-&gt;find(a);</span><br><span class="line">	threshold[a] = pedge-&gt;w + THRESHOLD(u-&gt;size(a), c);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// free up</span></span><br><span class="line">  <span class="keyword">delete</span> threshold;</span><br><span class="line">  <span class="keyword">return</span> u;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="类universe解析"><a href="#类universe解析" class="headerlink" title="类universe解析"></a>类universe解析</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">universe</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  universe(<span class="keyword">int</span> elements);</span><br><span class="line">  ~universe();</span><br><span class="line">  <span class="comment">// 寻找x的最顶层父节点</span></span><br><span class="line">  <span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span>;</span><br><span class="line">  <span class="comment">// 到底是x跟随y还是y跟随x与rank有关</span></span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">join</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line">  <span class="comment">// 返回该区域中含有的节点数目</span></span><br><span class="line">  <span class="function"><span class="keyword">int</span> <span class="title">size</span><span class="params">(<span class="keyword">int</span> x)</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> elts[x].size; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">int</span> <span class="title">num_sets</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> num; &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  uni_elt *elts;</span><br><span class="line">  <span class="comment">// 刚开始的时候区域数num和像素点数一样，随着节点的不断合并，区域数逐渐减少。</span></span><br><span class="line">  <span class="keyword">int</span> num;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">  <span class="keyword">int</span> rank;<span class="comment">//每个区域的等级，在合并时，向等级高的合并</span></span><br><span class="line">  <span class="keyword">int</span> p;<span class="comment">// 父节点</span></span><br><span class="line">  <span class="keyword">int</span> size;<span class="comment">//节点个数</span></span><br><span class="line">&#125; uni_elt;</span><br></pre></td></tr></table></figure>
+
           
         
       
@@ -513,7 +516,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.modmvp.club/2019/06/04/SLAM/文档/">
+    <link itemprop="mainEntityOfPage" href="http://blog.modmvp.club/2019/12/16/Digital-Image-Process/Digital-Image-Restoration-Classical/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiu Yang">
@@ -532,8 +535,8 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/06/04/SLAM/文档/" itemprop="url">
-                  文档
+                <a class="post-title-link" href="/2019/12/16/Digital-Image-Process/Digital-Image-Restoration-Classical/" itemprop="url">
+                  经典数字图像复原
                 </a>
               
             
@@ -559,7 +562,7 @@
                 
               
 
-              <time title="创建时间：2019-06-04 18:13:12 / 修改时间：18:15:18" itemprop="dateCreated datePublished" datetime="2019-06-04T18:13:12+08:00">2019-06-04</time>
+              <time title="创建时间：2019-12-16 09:14:01 / 修改时间：22:22:28" itemprop="dateCreated datePublished" datetime="2019-12-16T09:14:01+08:00">2019-12-16</time>
             
 
             
@@ -581,7 +584,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SLAM/" itemprop="url" rel="index"><span itemprop="name">SLAM</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Digital-Image-Process/" itemprop="url" rel="index"><span itemprop="name">Digital-Image-Process</span></a></span>
 
                 
                 
@@ -596,8 +599,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/06/04/SLAM/文档/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/06/04/SLAM/文档/" itemprop="commentCount"></span>
+                <a href="/2019/12/16/Digital-Image-Process/Digital-Image-Restoration-Classical/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/12/16/Digital-Image-Process/Digital-Image-Restoration-Classical/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -627,7 +630,10 @@
       
         
           
-            
+            <h4 id="INTRODUCTION"><a href="#INTRODUCTION" class="headerlink" title="INTRODUCTION"></a>INTRODUCTION</h4><p>​    图像复原指的是原始图像从退化图像中复原。由于很多图像在获取和处理的过程中发生退化，所以图像复原是人们所期望的结果。在这一章，我们将通过讨论经典的图像处理思想来走进图像复原的天地。这些想法关注的是经过滤波和加性噪声所污染的图像，方法通常有广义逆逆滤波器、约束最小二乘方滤波、最小均方误差(维纳)滤波、卡尔曼和最大后验技术等等。</p>
+<h4 id="OVERVIEW"><a href="#OVERVIEW" class="headerlink" title="OVERVIEW"></a>OVERVIEW</h4><p>​    光学和电子失真使图像发生退化。例如，在使用散焦镜头或者在拍摄运动的很快的物体时，图像会产生模糊，同样，图片在模拟传输的过程中，也会收到加性噪声的损坏。在许多运用中，这些错误限制了获得的数据的作用。因此，减少图像退化的方法是值得研究的。一种能克服这种错误的方法是用更好的镜头，用能够减少模糊的平稳成像系统和能够减弱噪声的更稳定的传输系统。不幸的是，许多运用承受不起系统变换的复杂性和开支。在这种情况下，系统设计者需要把精力集中在数字图像复原领域。</p>
+<p>​    数字图像复原在图像获取之后减少图像的畸变。可以解决许多的失真情况。但是，要设计一个合适的方法，通常需要遵循三个步骤</p>
+
           
         
       
@@ -673,7 +679,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -720,7 +726,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-count">21</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -749,12 +755,27 @@
                     
                       
                     
-                    <span class="site-state-item-count">8</span>
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
