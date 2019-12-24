@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.modmvp.club/"/>
-  <updated>2019-12-24T11:41:28.006Z</updated>
+  <updated>2019-12-24T13:10:37.247Z</updated>
   <id>http://blog.modmvp.club/</id>
   
   <author>
@@ -17,13 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>bilateral-filter双边滤波器原理</title>
+    <link href="http://blog.modmvp.club/2019/12/24/Digital-Image-Process/bilateral-filter/bilateral-filter/"/>
+    <id>http://blog.modmvp.club/2019/12/24/Digital-Image-Process/bilateral-filter/bilateral-filter/</id>
+    <published>2019-12-24T13:01:17.000Z</published>
+    <updated>2019-12-24T13:10:37.247Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="论文翻译"><a href="#论文翻译" class="headerlink" title="论文翻译"></a>论文翻译</h4><h4 id="双边滤波器论文翻译"><a href="#双边滤波器论文翻译" class="headerlink" title="双边滤波器论文翻译"></a>双边滤波器论文翻译</h4><div class="row">    <embed src="./bilateral_filter.pdf" width="100%" height="550" type="application/pdf"></div><h4 id="变换函数T的展开"><a href="#变换函数T的展开" class="headerlink" title="变换函数T的展开"></a>变换函数T的展开</h4><div class="row">    <embed src="./变换函数T的展开.pdf" width="100%" height="550" type="application/pdf"></div><h4 id="概率密度函数"><a href="#概率密度函数" class="headerlink" title="概率密度函数"></a>概率密度函数</h4><div class="row">    <embed src="./概率密度函数.pdf" width="100%" height="550" type="application/pdf"></div><h4 id="计算复杂度"><a href="#计算复杂度" class="headerlink" title="计算复杂度"></a>计算复杂度</h4><div class="row">    <embed src="./计算复杂度.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
+    
+    <summary type="html">
+    
+      双边滤波器论文
+    
+    </summary>
+    
+    
+      <category term="Digital-Image-Process" scheme="http://blog.modmvp.club/categories/Digital-Image-Process/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>hexo常用功能配置</title>
     <link href="http://blog.modmvp.club/2019/12/24/hexo/hexo%E9%85%8D%E7%BD%AE/"/>
     <id>http://blog.modmvp.club/2019/12/24/hexo/hexo%E9%85%8D%E7%BD%AE/</id>
     <published>2019-12-24T11:30:24.000Z</published>
-    <updated>2019-12-24T11:41:28.006Z</updated>
+    <updated>2019-12-24T11:48:43.830Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="添加在线聊天功能DaoVoice"><a href="#添加在线聊天功能DaoVoice" class="headerlink" title="添加在线聊天功能DaoVoice"></a>添加在线聊天功能DaoVoice</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/c3c408ac0bfa</span></span><br></pre></td></tr></table></figure><h4 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以使用百度云域名</span><br></pre></td></tr></table></figure><h4 id="添加鼠标点击爱心效果"><a href="#添加鼠标点击爱心效果" class="headerlink" title="添加鼠标点击爱心效果"></a>添加鼠标点击爱心效果</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/6d94011ffc6f</span></span><br></pre></td></tr></table></figure><h4 id="添加文章底部版权"><a href="#添加文章底部版权" class="headerlink" title="添加文章底部版权"></a>添加文章底部版权</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.pangao.vip/Hexo博客NexT主题美化之自定义文章底部版权声明/</span></span><br></pre></td></tr></table></figure><h4 id="markdown中显示图片"><a href="#markdown中显示图片" class="headerlink" title="markdown中显示图片"></a>markdown中显示图片</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/3e9d614c1e77</span></span><br></pre></td></tr></table></figure><p>插件之间会冲突，导致markdown自带的引用图片的命令会失效，可以使用标签页来引用</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;%asset_img 图片名称.bmp 图片描述%&#125;</span><br></pre></td></tr></table></figure><p>图片名称.bmp需要放在与该markdown相同名称的文件夹下</p><h4 id="加入搜索功能"><a href="#加入搜索功能" class="headerlink" title="加入搜索功能"></a>加入搜索功能</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/lijing742180/article/details/87970909</span></span><br></pre></td></tr></table></figure><h4 id="收录百度、Google"><a href="#收录百度、Google" class="headerlink" title="收录百度、Google"></a>收录百度、Google</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/8c0707ce5da4</span></span><br><span class="line"><span class="attribute">https://albenw.github.io/posts/be8242cc/</span></span><br></pre></td></tr></table></figure><h4 id="评论与统计"><a href="#评论与统计" class="headerlink" title="评论与统计"></a>评论与统计</h4><p>leancloud统计、Valine评论系统</p>]]></content>
+    <content type="html"><![CDATA[<h4 id="添加在线聊天功能DaoVoice"><a href="#添加在线聊天功能DaoVoice" class="headerlink" title="添加在线聊天功能DaoVoice"></a>添加在线聊天功能DaoVoice</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/c3c408ac0bfa</span></span><br></pre></td></tr></table></figure><h4 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以使用百度云域名</span><br></pre></td></tr></table></figure><h4 id="添加鼠标点击爱心效果"><a href="#添加鼠标点击爱心效果" class="headerlink" title="添加鼠标点击爱心效果"></a>添加鼠标点击爱心效果</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/6d94011ffc6f</span></span><br></pre></td></tr></table></figure><h4 id="添加文章底部版权"><a href="#添加文章底部版权" class="headerlink" title="添加文章底部版权"></a>添加文章底部版权</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.pangao.vip/Hexo博客NexT主题美化之自定义文章底部版权声明/</span></span><br></pre></td></tr></table></figure><h4 id="markdown中显示图片"><a href="#markdown中显示图片" class="headerlink" title="markdown中显示图片"></a>markdown中显示图片</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/3e9d614c1e77</span></span><br></pre></td></tr></table></figure><p>插件之间会冲突，导致markdown自带的引用图片的命令会失效，可以使用标签页来引用</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;%asset_img 图片名称.bmp 图片描述%&#125;</span><br></pre></td></tr></table></figure><p>图片名称.bmp需要放在与该markdown相同名称的文件夹下</p><h4 id="加入搜索功能"><a href="#加入搜索功能" class="headerlink" title="加入搜索功能"></a>加入搜索功能</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/lijing742180/article/details/87970909</span></span><br></pre></td></tr></table></figure><h4 id="收录百度、Google"><a href="#收录百度、Google" class="headerlink" title="收录百度、Google"></a>收录百度、Google</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/8c0707ce5da4</span></span><br><span class="line"><span class="attribute">https://albenw.github.io/posts/be8242cc/</span></span><br></pre></td></tr></table></figure><h4 id="评论与统计"><a href="#评论与统计" class="headerlink" title="评论与统计"></a>评论与统计</h4><p>leancloud统计、Valine评论系统</p><h4 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/coder_jeremy/article/details/83588604</span></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -58,6 +79,30 @@
     
     
       <category term="opencv" scheme="http://blog.modmvp.club/categories/opencv/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>游戏人生</title>
+    <link href="http://blog.modmvp.club/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/"/>
+    <id>http://blog.modmvp.club/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/</id>
+    <published>2019-12-22T01:14:01.000Z</published>
+    <updated>2019-12-19T11:08:08.688Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>《NO GAME NO LIFE 游戏人生》是<a href="https://baike.baidu.com/item/%E6%A6%8E%E5%AE%AB%E7%A5%90" target="_blank" rel="noopener">榎宫祐</a>著作并负责插画的轻小说，可以算作智斗吧。</p><h4 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h4><p>我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一章，里面的词语略显粗俗（全文几乎都是乳），这个粗俗不恰到好处，让人摸不着头脑。</p><p>如果想了解这个，我认为还是看动画吧，动画做的不错，但是按照后面的情节发展，感觉是不会再动画的原因吧。感觉要读点其它类型的书了，我的价值观。。。下期读《三体》吧</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;《NO GAME NO LIFE 游戏人生》是&lt;a href=&quot;https://baike.baidu.com/item/%E6%A6%8E
+      
+    
+    </summary>
+    
+    
+      <category term="阅读" scheme="http://blog.modmvp.club/categories/%E9%98%85%E8%AF%BB/"/>
     
     
   </entry>
@@ -116,30 +161,6 @@
   </entry>
   
   <entry>
-    <title>游戏人生</title>
-    <link href="http://blog.modmvp.club/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/"/>
-    <id>http://blog.modmvp.club/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/</id>
-    <published>2019-12-22T01:14:01.000Z</published>
-    <updated>2019-12-19T11:08:08.688Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>《NO GAME NO LIFE 游戏人生》是<a href="https://baike.baidu.com/item/%E6%A6%8E%E5%AE%AB%E7%A5%90" target="_blank" rel="noopener">榎宫祐</a>著作并负责插画的轻小说，可以算作智斗吧。</p><h4 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h4><p>我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一章，里面的词语略显粗俗（全文几乎都是乳），这个粗俗不恰到好处，让人摸不着头脑。</p><p>如果想了解这个，我认为还是看动画吧，动画做的不错，但是按照后面的情节发展，感觉是不会再动画的原因吧。感觉要读点其它类型的书了，我的价值观。。。下期读《三体》吧</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;《NO GAME NO LIFE 游戏人生》是&lt;a href=&quot;https://baike.baidu.com/item/%E6%A6%8E
-      
-    
-    </summary>
-    
-    
-      <category term="阅读" scheme="http://blog.modmvp.club/categories/%E9%98%85%E8%AF%BB/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>基于图的高效图像分割-segment_image函数解析</title>
     <link href="http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segment_image/"/>
     <id>http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segment_image/</id>
@@ -161,33 +182,6 @@
   </entry>
   
   <entry>
-    <title>Efficient Graph-Based Image Segmentation</title>
-    <link href="http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/Efficient%20Graph-Based%20Image%20Segmentation/"/>
-    <id>http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/Efficient%20Graph-Based%20Image%20Segmentation/</id>
-    <published>2019-12-19T01:14:01.000Z</published>
-    <updated>2019-12-24T11:08:29.619Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>从现在开始，我将要对这篇论文的原理和代码进行详细的解读。</p>]]></content>
-    
-    <summary type="html">
-    
-      Efficient Graph-Based Image Segmentation论文翻译理解
-    
-    </summary>
-    
-    
-      <category term="Digital-Image-Process" scheme="http://blog.modmvp.club/categories/Digital-Image-Process/"/>
-    
-    
-      <category term="图像分割" scheme="http://blog.modmvp.club/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/"/>
-    
-      <category term="图论" scheme="http://blog.modmvp.club/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-      <category term="论文阅读" scheme="http://blog.modmvp.club/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>基于图的高效图像分割-segment_graph函数解析</title>
     <link href="http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segment_graph/"/>
     <id>http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segment_graph/</id>
@@ -205,6 +199,33 @@
     
       <category term="Digital-Image-Process" scheme="http://blog.modmvp.club/categories/Digital-Image-Process/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>Efficient Graph-Based Image Segmentation</title>
+    <link href="http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/Efficient%20Graph-Based%20Image%20Segmentation/"/>
+    <id>http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/Efficient%20Graph-Based%20Image%20Segmentation/</id>
+    <published>2019-12-19T01:14:01.000Z</published>
+    <updated>2019-12-24T12:39:19.642Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>从现在开始，我将要对这篇论文的原理和代码进行详细的解读。</p><h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><p>这篇文章主要解决把图像分割为区域的问题。我们定义一个预测器，用基于图的图像表示方法来测量两个区域之间边界的可信度。基于这个预测器，我们开发了一种高效的分割算法，并且证明，尽管这种算法具有贪心策略，但是它依然满足全局性能。</p>]]></content>
+    
+    <summary type="html">
+    
+      Efficient Graph-Based Image Segmentation论文翻译理解
+    
+    </summary>
+    
+    
+      <category term="Digital-Image-Process" scheme="http://blog.modmvp.club/categories/Digital-Image-Process/"/>
+    
+    
+      <category term="图像分割" scheme="http://blog.modmvp.club/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/"/>
+    
+      <category term="图论" scheme="http://blog.modmvp.club/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+      <category term="论文阅读" scheme="http://blog.modmvp.club/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
     
   </entry>
   
@@ -440,30 +461,6 @@
       
       
         &lt;h3 id=&quot;一、环境准备&quot;&gt;&lt;a href=&quot;#一、环境准备&quot; class=&quot;headerlink&quot; title=&quot;一、环境准备&quot;&gt;&lt;/a&gt;一、环境准备&lt;/h3&gt;&lt;h4 id=&quot;1、相关依赖的下载&quot;&gt;&lt;a href=&quot;#1、相关依赖的下载&quot; class=&quot;headerlink
-      
-    
-    </summary>
-    
-    
-      <category term="tensorflow" scheme="http://blog.modmvp.club/categories/tensorflow/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>vs2017上运行第一个tensorflow程序</title>
-    <link href="http://blog.modmvp.club/2018/10/05/tensorflow/vs2017%E4%B8%8A%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%80%E4%B8%AAtensorflow%E7%A8%8B%E5%BA%8F/"/>
-    <id>http://blog.modmvp.club/2018/10/05/tensorflow/vs2017%E4%B8%8A%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%80%E4%B8%AAtensorflow%E7%A8%8B%E5%BA%8F/</id>
-    <published>2018-10-05T03:00:00.000Z</published>
-    <updated>2018-10-05T03:20:49.697Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="一、环境搭建"><a href="#一、环境搭建" class="headerlink" title="一、环境搭建"></a>一、环境搭建</h3><h4 id="1、文件包含"><a href="#1、文件包含" class="headerlink" title="1、文件包含"></a>1、文件包含</h4><p>用vs2017建立工程就不说了，记得是Release版本的。</p><p>a、头文件包含</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">D:\programFiles\tensorflow\tensorflow\contrib\cmake\build\Release</span><br><span class="line">D:\programFiles\tensorflow\tensorflow\contrib\cmake\build\external\nsync\<span class="keyword">public</span></span><br><span class="line">D:\programFiles\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\src</span><br><span class="line">D:\programFiles\tensorflow\tensorflow\contrib\cmake\build</span><br><span class="line">D:\programFiles\tensorflow\tensorflow\contrib\cmake\build\external\eigen_archive</span><br><span class="line">D:\programFiles\tensorflow</span><br><span class="line">D:\programFiles\tensorflow\third_party\eigen3</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp</span><br></pre></td></tr></table></figure><p>b、库文件目录</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\programFiles\tensorflow\tensorflow\contrib\cmake\build\Release</span><br></pre></td></tr></table></figure><p>c、库文件包含</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">tensorflow.lib</span><br><span class="line">tensorflow_static.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\algorithm\Release\absl_algorithm.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\base\Release\absl_base.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\base\Release\absl_dynamic_annotations.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\base\Release\absl_malloc_internal.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\base\Release\absl_spinlock_wait.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\base\Release\absl_throw_delegate.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\container\Release\absl_container.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\container\Release\test_instance_tracker_lib.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\debugging\Release\absl_debugging.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\debugging\Release\absl_examine_stack.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\debugging\Release\absl_failure_signal_handler.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\debugging\Release\absl_leak_check.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\debugging\Release\absl_stacktrace.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\debugging\Release\absl_stack_consumption.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\debugging\Release\absl_symbolize.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\memory\Release\absl_memory.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\meta\Release\absl_meta.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\numeric\Release\absl_int128.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\numeric\Release\absl_numeric.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\strings\Release\absl_strings.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\strings\Release\absl_str_format.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\strings\Release\str_format_extension_internal.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\strings\Release\str_format_internal.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\synchronization\Release\absl_synchronization.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\time\Release\absl_time.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\types\Release\absl_any.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\types\Release\absl_bad_any_cast.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\types\Release\absl_bad_optional_access.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\types\Release\absl_optional.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\types\Release\absl_span.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\types\Release\absl_variant.lib</span><br><span class="line">D:\programFiles\tensorflow\abseil-cpp\build\absl\utility\Release\absl_utility.lib</span><br></pre></td></tr></table></figure><p>基本上是abseil的库文件，去死。</p><p>记得把tensorflow.dll文件拷贝到工程的文件目录下。</p><h4 id="2、加入预编译指令"><a href="#2、加入预编译指令" class="headerlink" title="2、加入预编译指令"></a>2、加入预编译指令</h4><p>新建一个pre.hpp的头文件，加入下面的预编译指令，不然编译的时候会报错。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> once</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;tchar.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> COMPILER_MSVC</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NOMINMAX</span></span><br></pre></td></tr></table></figure><h3 id="二、测试代码"><a href="#二、测试代码" class="headerlink" title="二、测试代码"></a>二、测试代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"tensorflow/core/public/session.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"tensorflow/core/platform/env.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> tensorflow;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief deep model for click through rate prediction</span></span><br><span class="line"><span class="comment"> * @details [long description]</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * @param argv[1] graph protobuf</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * @return [description]</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>* argv[])</span> </span>&#123;</span><br><span class="line">  <span class="comment">// Initialize a tensorflow session</span></span><br><span class="line">  Session* session;</span><br><span class="line">  Status status = NewSession(SessionOptions(), &amp;session);</span><br><span class="line">  <span class="keyword">if</span> (!status.ok()) &#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; status.ToString() &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Session created successfully"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Load the protobuf graph</span></span><br><span class="line">  GraphDef graph_def;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">string</span> graph_path = <span class="string">"/home/mod/桌面/tensorflow/tensorflow/tensorflow-cpp/graph.pb"</span>;</span><br><span class="line">  <span class="comment">// 读取pb文件</span></span><br><span class="line">  status = ReadBinaryProto(Env::Default(), graph_path, &amp;graph_def);</span><br><span class="line">  <span class="keyword">if</span> (!status.ok()) &#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; status.ToString() &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Load graph protobuf successfully"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Add the graph to the session</span></span><br><span class="line">  status = session-&gt;Create(graph_def);</span><br><span class="line">  <span class="keyword">if</span> (!status.ok()) &#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; status.ToString() &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Add graph to session successfully"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Setup inputs and outputs:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// Our graph doesn't require any inputs, since it specifies default values,</span></span><br><span class="line">  <span class="comment">// but we'll change an input to demonstrate（演示）.</span></span><br><span class="line">  Tensor a(DT_FLOAT, TensorShape());</span><br><span class="line">  a.scalar&lt;<span class="keyword">float</span>&gt;()() = <span class="number">10.0</span>;</span><br><span class="line"></span><br><span class="line">  Tensor b(DT_FLOAT, TensorShape());</span><br><span class="line">  b.scalar&lt;<span class="keyword">float</span>&gt;()() = <span class="number">11.0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::pair&lt;<span class="built_in">string</span>, tensorflow::Tensor&gt;&gt; inputs = &#123;</span><br><span class="line">    &#123; <span class="string">"a"</span>, a &#125;,</span><br><span class="line">    &#123; <span class="string">"b"</span>, b &#125;,</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// The session will initialize the outputs</span></span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;tensorflow::Tensor&gt; outputs;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Run the session, evaluating our "c" operation from the graph</span></span><br><span class="line">  status = session-&gt;Run(inputs, &#123;<span class="string">"c"</span>&#125;, &#123;&#125;, &amp;outputs);</span><br><span class="line">  <span class="keyword">if</span> (!status.ok()) &#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; status.ToString() &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Run session successfully"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Grab the first output (we only evaluated one graph node: "c")</span></span><br><span class="line">  <span class="comment">// and convert the node to a scalar representation.</span></span><br><span class="line">  <span class="keyword">auto</span> output_c = outputs[<span class="number">0</span>].scalar&lt;<span class="keyword">float</span>&gt;();</span><br><span class="line"></span><br><span class="line">  <span class="comment">// (There are similar methods for vectors and matrices here:</span></span><br><span class="line">  <span class="comment">// https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/public/tensor.h)</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// Print the results</span></span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; outputs[<span class="number">0</span>].DebugString() &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>; <span class="comment">// Tensor&lt;type: float shape: [] values: 30&gt;</span></span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"output value: "</span> &lt;&lt; output_c() &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>; <span class="comment">// 30</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// Free any resources used by the session</span></span><br><span class="line">  session-&gt;Close();</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;一、环境搭建&quot;&gt;&lt;a href=&quot;#一、环境搭建&quot; class=&quot;headerlink&quot; title=&quot;一、环境搭建&quot;&gt;&lt;/a&gt;一、环境搭建&lt;/h3&gt;&lt;h4 id=&quot;1、文件包含&quot;&gt;&lt;a href=&quot;#1、文件包含&quot; class=&quot;headerlink&quot; titl
       
     
     </summary>
