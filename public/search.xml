@@ -48,25 +48,6 @@
     
     
     <entry>
-      <title>游戏人生</title>
-      <link href="/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/"/>
-      <url>/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/</url>
-      
-        <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>《NO GAME NO LIFE 游戏人生》是<a href="https://baike.baidu.com/item/%E6%A6%8E%E5%AE%AB%E7%A5%90" target="_blank" rel="noopener">榎宫祐</a>著作并负责插画的轻小说，可以算作智斗吧。</p><h4 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h4><p>我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一章，里面的词语略显粗俗（全文几乎都是乳），这个粗俗不恰到好处，让人摸不着头脑。</p><p>如果想了解这个，我认为还是看动画吧，动画做的不错，但是按照后面的情节发展，感觉是不会再动画的原因吧。感觉要读点其它类型的书了，我的价值观。。。下期读《三体》吧</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 阅读 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>基于图的高效图像分割segment_cpp</title>
       <link href="/2019/12/22/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segement_cpp/"/>
       <url>/2019/12/22/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segement_cpp/</url>
@@ -92,6 +73,69 @@
     
     
     <entry>
+      <title>游戏人生</title>
+      <link href="/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/"/>
+      <url>/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/</url>
+      
+        <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>《NO GAME NO LIFE 游戏人生》是<a href="https://baike.baidu.com/item/%E6%A6%8E%E5%AE%AB%E7%A5%90" target="_blank" rel="noopener">榎宫祐</a>著作并负责插画的轻小说，可以算作智斗吧。</p><h4 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h4><p>我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一章，里面的词语略显粗俗（全文几乎都是乳），这个粗俗不恰到好处，让人摸不着头脑。</p><p>如果想了解这个，我认为还是看动画吧，动画做的不错，但是按照后面的情节发展，感觉是不会再动画的原因吧。感觉要读点其它类型的书了，我的价值观。。。下期读《三体》吧</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 阅读 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>基于图的高效图像分割-segment_image函数解析</title>
+      <link href="/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segment_image/"/>
+      <url>/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segment_image/</url>
+      
+        <content type="html"><![CDATA[<h4 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line">image&lt;rgb&gt; *segment_image(image&lt;rgb&gt; *im, <span class="keyword">float</span> sigma, <span class="keyword">float</span> c, <span class="keyword">int</span> min_size,</span><br><span class="line">  <span class="keyword">int</span> *num_ccs) &#123;</span><br><span class="line">  <span class="keyword">int</span> width = im-&gt;width();</span><br><span class="line">  <span class="keyword">int</span> height = im-&gt;height();</span><br><span class="line">  <span class="comment">// 通道分离</span></span><br><span class="line">  image&lt;<span class="keyword">float</span>&gt; *r = <span class="keyword">new</span> image&lt;<span class="keyword">float</span>&gt;(width, height);</span><br><span class="line">  image&lt;<span class="keyword">float</span>&gt; *g = <span class="keyword">new</span> image&lt;<span class="keyword">float</span>&gt;(width, height);</span><br><span class="line">  image&lt;<span class="keyword">float</span>&gt; *b = <span class="keyword">new</span> image&lt;<span class="keyword">float</span>&gt;(width, height);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// smooth each color channel  </span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> y = <span class="number">0</span>; y &lt; height; y++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">0</span>; x &lt; width; x++) &#123;</span><br><span class="line">      imRef(r, x, y) = imRef(im, x, y).r;</span><br><span class="line">      imRef(g, x, y) = imRef(im, x, y).g;</span><br><span class="line">      imRef(b, x, y) = imRef(im, x, y).b;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 零均值高斯平滑，去除随机噪声</span></span><br><span class="line">  image&lt;<span class="keyword">float</span>&gt; *smooth_r = smooth(r, sigma);</span><br><span class="line">  image&lt;<span class="keyword">float</span>&gt; *smooth_g = smooth(g, sigma);</span><br><span class="line">  image&lt;<span class="keyword">float</span>&gt; *smooth_b = smooth(b, sigma);</span><br><span class="line">  <span class="keyword">delete</span> r;</span><br><span class="line">  <span class="keyword">delete</span> g;</span><br><span class="line">  <span class="keyword">delete</span> b;</span><br><span class="line"> </span><br><span class="line">  <span class="comment">// build graph</span></span><br><span class="line">  edge *edges = <span class="keyword">new</span> edge[width*height*<span class="number">4</span>];</span><br><span class="line">  <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> y = <span class="number">0</span>; y &lt; height; y++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">0</span>; x &lt; width; x++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (x &lt; width<span class="number">-1</span>) &#123;</span><br><span class="line">edges[num].a = y * width + x;</span><br><span class="line">edges[num].b = y * width + (x+<span class="number">1</span>);</span><br><span class="line">    <span class="comment">// 欧式距离</span></span><br><span class="line">edges[num].w = diff(smooth_r, smooth_g, smooth_b, x, y, x+<span class="number">1</span>, y);</span><br><span class="line">num++;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (y &lt; height<span class="number">-1</span>) &#123;</span><br><span class="line">edges[num].a = y * width + x;</span><br><span class="line">edges[num].b = (y+<span class="number">1</span>) * width + x;</span><br><span class="line">edges[num].w = diff(smooth_r, smooth_g, smooth_b, x, y, x, y+<span class="number">1</span>);</span><br><span class="line">num++;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> ((x &lt; width<span class="number">-1</span>) &amp;&amp; (y &lt; height<span class="number">-1</span>)) &#123;</span><br><span class="line">edges[num].a = y * width + x;</span><br><span class="line">edges[num].b = (y+<span class="number">1</span>) * width + (x+<span class="number">1</span>);</span><br><span class="line">edges[num].w = diff(smooth_r, smooth_g, smooth_b, x, y, x+<span class="number">1</span>, y+<span class="number">1</span>);</span><br><span class="line">num++;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> ((x &lt; width<span class="number">-1</span>) &amp;&amp; (y &gt; <span class="number">0</span>)) &#123;</span><br><span class="line">edges[num].a = y * width + x;</span><br><span class="line">edges[num].b = (y<span class="number">-1</span>) * width + (x+<span class="number">1</span>);</span><br><span class="line">edges[num].w = diff(smooth_r, smooth_g, smooth_b, x, y, x+<span class="number">1</span>, y<span class="number">-1</span>);</span><br><span class="line">num++;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">delete</span> smooth_r;</span><br><span class="line">  <span class="keyword">delete</span> smooth_g;</span><br><span class="line">  <span class="keyword">delete</span> smooth_b;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// segment</span></span><br><span class="line">  universe *u = segment_graph(width*height, num, edges, c);</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// post process small components</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> a = u-&gt;find(edges[i].a);</span><br><span class="line">    <span class="keyword">int</span> b = u-&gt;find(edges[i].b);</span><br><span class="line">    <span class="keyword">if</span> ((a != b) &amp;&amp; ((u-&gt;size(a) &lt; min_size) || (u-&gt;size(b) &lt; min_size)))</span><br><span class="line">      u-&gt;join(a, b);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">delete</span> [] edges;</span><br><span class="line">  *num_ccs = u-&gt;num_sets();</span><br><span class="line"></span><br><span class="line">  image&lt;rgb&gt; *output = <span class="keyword">new</span> image&lt;rgb&gt;(width, height);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// pick random colors for each component</span></span><br><span class="line">  rgb *colors = <span class="keyword">new</span> rgb[width*height];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; width*height; i++)</span><br><span class="line">    colors[i] = random_rgb();</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> y = <span class="number">0</span>; y &lt; height; y++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">0</span>; x &lt; width; x++) &#123;</span><br><span class="line">      <span class="keyword">int</span> comp = u-&gt;find(y * width + x);</span><br><span class="line">      imRef(output, x, y) = colors[comp];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;  </span><br><span class="line"></span><br><span class="line">  <span class="keyword">delete</span> [] colors;  </span><br><span class="line">  <span class="keyword">delete</span> u;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> output;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="建图"><a href="#建图" class="headerlink" title="建图"></a>建图</h4><p><img src="segment_image/diff.bmp" alt=""></p><p>以（x,y）分别和自己邻域内的三个点组合形成边，边上的权重为RGB分量的欧式距离的值。</p><h5 id="为什么是和（x-y）边上的这几个点组合？"><a href="#为什么是和（x-y）边上的这几个点组合？" class="headerlink" title="为什么是和（x,y）边上的这几个点组合？"></a>为什么是和（x,y）边上的这几个点组合？</h5><ol><li>因为这几个点分别位于(x,y)的水平、垂直、对角，没有二义性。比如：知道一条边的两个顶点为(34,33)和(34,34)，那么可以知道(x,y)=(34,33)，另一个点位于它的右边，它的临近关系就唯一确定了（另一个点不是在它的左边）。</li><li>这样取，可以避免点被重复取到。3x3的邻域内一对点的差异只会计算一次。不然关于(x,y)中心对称的边就会重复。</li><li>(x,y)和自己邻域上的点的相似程度更高，权值更接近于0，更容易先合并。</li></ol><h5 id="边的两个元素a与b的大小关系。"><a href="#边的两个元素a与b的大小关系。" class="headerlink" title="边的两个元素a与b的大小关系。"></a>边的两个元素a与b的大小关系。</h5><p>当另一个点为(x+1,y-1)的时候，b比a小，其它情况下，b都比a大。</p><h4 id="edge的尺寸为什么是长x宽x4"><a href="#edge的尺寸为什么是长x宽x4" class="headerlink" title="edge的尺寸为什么是长x宽x4"></a>edge的尺寸为什么是长x宽x4</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> Digital-Image-Process </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Efficient Graph-Based Image Segmentation</title>
+      <link href="/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/Efficient%20Graph-Based%20Image%20Segmentation/"/>
+      <url>/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/Efficient%20Graph-Based%20Image%20Segmentation/</url>
+      
+        <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>从现在开始，我将要对这篇论文的原理和代码进行详细的解读。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Digital-Image-Process </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 图像分割，图论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于图的高效图像分割-segment_graph函数解析</title>
       <link href="/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segment_graph/"/>
       <url>/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/segment_graph/</url>
@@ -105,6 +149,35 @@
           
       </categories>
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>经典数字图像复原</title>
+      <link href="/2019/12/16/Digital-Image-Process/Digital-Image-Restoration-Classical/"/>
+      <url>/2019/12/16/Digital-Image-Process/Digital-Image-Restoration-Classical/</url>
+      
+        <content type="html"><![CDATA[<h4 id="INTRODUCTION"><a href="#INTRODUCTION" class="headerlink" title="INTRODUCTION"></a>INTRODUCTION</h4><p>​    图像复原指的是原始图像从退化图像中复原。由于很多图像在获取和处理的过程中发生退化，所以图像复原是人们所期望的结果。在这一章，我们将通过讨论经典的图像处理思想来走进图像复原的天地。这些想法关注的是经过滤波和加性噪声所污染的图像，方法通常有广义逆逆滤波器、约束最小二乘方滤波、最小均方误差(维纳)滤波、卡尔曼和最大后验技术等等。</p><h4 id="OVERVIEW"><a href="#OVERVIEW" class="headerlink" title="OVERVIEW"></a>OVERVIEW</h4><p>​    光学和电子失真使图像发生退化。例如，在使用散焦镜头或者在拍摄运动的很快的物体时，图像会产生模糊，同样，图片在模拟传输的过程中，也会收到加性噪声的损坏。在许多运用中，这些错误限制了获得的数据的作用。因此，减少图像退化的方法是值得研究的。一种能克服这种错误的方法是用更好的镜头，用能够减少模糊的平稳成像系统和能够减弱噪声的更稳定的传输系统。不幸的是，许多运用承受不起系统变换的复杂性和开支。在这种情况下，系统设计者需要把精力集中在数字图像复原领域。</p><p>​    数字图像复原在图像获取之后减少图像的畸变。可以解决许多的失真情况。但是，要设计一个合适的方法，通常需要遵循三个步骤</p><p><img src="Digital-Image-Restoration-Classical\1.jpg" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Digital-Image-Process </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 约束最小二乘方滤波 </tag>
+            
+            <tag> 广义逆逆滤波器 </tag>
+            
+            <tag> 最小均方误差(维纳)滤波 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -225,11 +298,11 @@
     
     
     <entry>
-      <title>openVINO的常用网址</title>
-      <link href="/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/"/>
-      <url>/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/</url>
+      <title>movidius指南</title>
+      <link href="/2018/11/08/openVINO/movidius%E6%8C%87%E5%8D%97/"/>
+      <url>/2018/11/08/openVINO/movidius%E6%8C%87%E5%8D%97/</url>
       
-        <content type="html"><![CDATA[<p>1、openVINO官网</p><p><a href="https://software.intel.com/openvino-toolkit" target="_blank" rel="noopener">https://software.intel.com/openvino-toolkit</a></p><p>2、movidius神经网络加速器</p><p><a href="https://www.movidius.com/" target="_blank" rel="noopener">https://www.movidius.com/</a></p>]]></content>
+        <content type="html"><![CDATA[<p>1、使用前检查movidius NSC所支持的USB，如果USB3.0插在USB3.1上，型号可能对不上，导致SDK找不到设备。</p>]]></content>
       
       
       <categories>
@@ -244,11 +317,11 @@
     
     
     <entry>
-      <title>movidius指南</title>
-      <link href="/2018/11/08/openVINO/movidius%E6%8C%87%E5%8D%97/"/>
-      <url>/2018/11/08/openVINO/movidius%E6%8C%87%E5%8D%97/</url>
+      <title>openVINO的常用网址</title>
+      <link href="/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/"/>
+      <url>/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/</url>
       
-        <content type="html"><![CDATA[<p>1、使用前检查movidius NSC所支持的USB，如果USB3.0插在USB3.1上，型号可能对不上，导致SDK找不到设备。</p>]]></content>
+        <content type="html"><![CDATA[<p>1、openVINO官网</p><p><a href="https://software.intel.com/openvino-toolkit" target="_blank" rel="noopener">https://software.intel.com/openvino-toolkit</a></p><p>2、movidius神经网络加速器</p><p><a href="https://www.movidius.com/" target="_blank" rel="noopener">https://www.movidius.com/</a></p>]]></content>
       
       
       <categories>
