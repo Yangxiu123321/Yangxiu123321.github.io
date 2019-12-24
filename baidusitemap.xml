@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.modmvp.club/model.html</loc>
+    <lastmod>2019-12-24</lastmod>
+  </url>  <url>
     <loc>http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/Efficient%20Graph-Based%20Image%20Segmentation/</loc>
     <lastmod>2019-12-24</lastmod>
   </url>  <url>
@@ -29,9 +32,6 @@
     <lastmod>2019-12-19</lastmod>
   </url>  <url>
     <loc>http://blog.modmvp.club/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/</loc>
-    <lastmod>2019-12-19</lastmod>
-  </url>  <url>
-    <loc>http://blog.modmvp.club/model.html</loc>
     <lastmod>2019-12-19</lastmod>
   </url>  <url>
     <loc>http://blog.modmvp.club/2019/11/22/%E9%98%85%E8%AF%BB/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%AE%9E%E5%8A%9B%E4%B8%BB%E4%B9%89%E8%87%B3%E4%B8%8A%E6%95%99%E5%AE%A4/</loc>
