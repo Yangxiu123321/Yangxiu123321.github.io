@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.modmvp.club/2019/12/22/opencv/opencv%E8%AE%BF%E9%97%AE%E5%83%8F%E7%B4%A0%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2019-12-24T13:25:03.834Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.modmvp.club/2019/12/23/opencv/opencv%E7%BC%96%E8%AF%91/</loc>
+    
+    <lastmod>2019-12-24T13:23:57.883Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.modmvp.club/2019/12/24/hexo/hexo%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2019-12-24T13:21:47.576Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.modmvp.club/2019/12/24/Digital-Image-Process/bilateral-filter/bilateral-filter/</loc>
     
     <lastmod>2019-12-24T13:10:37.247Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>http://blog.modmvp.club/2019/12/19/Digital-Image-Process/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/Efficient%20Graph-Based%20Image%20Segmentation/</loc>
     
     <lastmod>2019-12-24T12:39:19.642Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.modmvp.club/2019/12/24/hexo/hexo%E9%85%8D%E7%BD%AE/</loc>
-    
-    <lastmod>2019-12-24T11:48:43.830Z</lastmod>
     
   </url>
   
@@ -61,20 +75,6 @@
     <loc>http://blog.modmvp.club/2018/12/14/caffe/%E5%AE%89%E8%A3%85%E4%B8%8E%E8%AE%AD%E7%BB%83/</loc>
     
     <lastmod>2019-12-24T06:21:05.608Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.modmvp.club/2019/12/22/opencv/opencv%E8%AE%BF%E9%97%AE%E5%83%8F%E7%B4%A0%E6%96%B9%E6%B3%95/</loc>
-    
-    <lastmod>2019-12-23T14:20:55.806Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.modmvp.club/2019/12/23/opencv/opencv%E7%BC%96%E8%AF%91/</loc>
-    
-    <lastmod>2019-12-23T14:07:43.511Z</lastmod>
     
   </url>
   

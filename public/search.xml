@@ -27,7 +27,7 @@
       <link href="/2019/12/24/hexo/hexo%E9%85%8D%E7%BD%AE/"/>
       <url>/2019/12/24/hexo/hexo%E9%85%8D%E7%BD%AE/</url>
       
-        <content type="html"><![CDATA[<h4 id="添加在线聊天功能DaoVoice"><a href="#添加在线聊天功能DaoVoice" class="headerlink" title="添加在线聊天功能DaoVoice"></a>添加在线聊天功能DaoVoice</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/c3c408ac0bfa</span></span><br></pre></td></tr></table></figure><h4 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以使用百度云域名</span><br></pre></td></tr></table></figure><h4 id="添加鼠标点击爱心效果"><a href="#添加鼠标点击爱心效果" class="headerlink" title="添加鼠标点击爱心效果"></a>添加鼠标点击爱心效果</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/6d94011ffc6f</span></span><br></pre></td></tr></table></figure><h4 id="添加文章底部版权"><a href="#添加文章底部版权" class="headerlink" title="添加文章底部版权"></a>添加文章底部版权</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.pangao.vip/Hexo博客NexT主题美化之自定义文章底部版权声明/</span></span><br></pre></td></tr></table></figure><h4 id="markdown中显示图片"><a href="#markdown中显示图片" class="headerlink" title="markdown中显示图片"></a>markdown中显示图片</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/3e9d614c1e77</span></span><br></pre></td></tr></table></figure><p>插件之间会冲突，导致markdown自带的引用图片的命令会失效，可以使用标签页来引用</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;%asset_img 图片名称.bmp 图片描述%&#125;</span><br></pre></td></tr></table></figure><p>图片名称.bmp需要放在与该markdown相同名称的文件夹下</p><h4 id="加入搜索功能"><a href="#加入搜索功能" class="headerlink" title="加入搜索功能"></a>加入搜索功能</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/lijing742180/article/details/87970909</span></span><br></pre></td></tr></table></figure><h4 id="收录百度、Google"><a href="#收录百度、Google" class="headerlink" title="收录百度、Google"></a>收录百度、Google</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/8c0707ce5da4</span></span><br><span class="line"><span class="attribute">https://albenw.github.io/posts/be8242cc/</span></span><br></pre></td></tr></table></figure><h4 id="评论与统计"><a href="#评论与统计" class="headerlink" title="评论与统计"></a>评论与统计</h4><p>leancloud统计、Valine评论系统</p><h4 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/coder_jeremy/article/details/83588604</span></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h4 id="添加在线聊天功能DaoVoice"><a href="#添加在线聊天功能DaoVoice" class="headerlink" title="添加在线聊天功能DaoVoice"></a>添加在线聊天功能DaoVoice</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/c3c408ac0bfa</span></span><br></pre></td></tr></table></figure><h4 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以使用百度云域名</span><br></pre></td></tr></table></figure><h4 id="添加鼠标点击爱心效果"><a href="#添加鼠标点击爱心效果" class="headerlink" title="添加鼠标点击爱心效果"></a>添加鼠标点击爱心效果</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/6d94011ffc6f</span></span><br></pre></td></tr></table></figure><h4 id="添加文章底部版权"><a href="#添加文章底部版权" class="headerlink" title="添加文章底部版权"></a>添加文章底部版权</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.pangao.vip/Hexo博客NexT主题美化之自定义文章底部版权声明/</span></span><br></pre></td></tr></table></figure><h4 id="markdown中显示图片"><a href="#markdown中显示图片" class="headerlink" title="markdown中显示图片"></a>markdown中显示图片</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/3e9d614c1e77</span></span><br></pre></td></tr></table></figure><p>插件之间会冲突，导致markdown自带的引用图片的命令会失效，可以使用标签页来引用</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;%asset_img 图片名称.bmp 图片描述%&#125;</span><br></pre></td></tr></table></figure><p>图片名称.bmp需要放在与该markdown相同名称的文件夹下</p><h5 id="添加pdf"><a href="#添加pdf" class="headerlink" title="添加pdf"></a>添加pdf</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pdf ./pdf名字.pdf %&#125;</span><br></pre></td></tr></table></figure><p>pdf文件和图片一样需要放到同名文件夹下</p><h4 id="加入搜索功能"><a href="#加入搜索功能" class="headerlink" title="加入搜索功能"></a>加入搜索功能</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/lijing742180/article/details/87970909</span></span><br></pre></td></tr></table></figure><h4 id="收录百度、Google"><a href="#收录百度、Google" class="headerlink" title="收录百度、Google"></a>收录百度、Google</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/8c0707ce5da4</span></span><br><span class="line"><span class="attribute">https://albenw.github.io/posts/be8242cc/</span></span><br></pre></td></tr></table></figure><h4 id="评论与统计"><a href="#评论与统计" class="headerlink" title="评论与统计"></a>评论与统计</h4><p>leancloud统计、Valine评论系统</p><h4 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/coder_jeremy/article/details/83588604</span></span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -52,25 +52,6 @@
       <categories>
           
           <category> opencv </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>游戏人生</title>
-      <link href="/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/"/>
-      <url>/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/</url>
-      
-        <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>《NO GAME NO LIFE 游戏人生》是<a href="https://baike.baidu.com/item/%E6%A6%8E%E5%AE%AB%E7%A5%90" target="_blank" rel="noopener">榎宫祐</a>著作并负责插画的轻小说，可以算作智斗吧。</p><h4 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h4><p>我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一章，里面的词语略显粗俗（全文几乎都是乳），这个粗俗不恰到好处，让人摸不着头脑。</p><p>如果想了解这个，我认为还是看动画吧，动画做的不错，但是按照后面的情节发展，感觉是不会再动画的原因吧。感觉要读点其它类型的书了，我的价值观。。。下期读《三体》吧</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 阅读 </category>
           
       </categories>
       
@@ -124,6 +105,25 @@
             <tag> ppm图片 </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>游戏人生</title>
+      <link href="/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/"/>
+      <url>/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/</url>
+      
+        <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>《NO GAME NO LIFE 游戏人生》是<a href="https://baike.baidu.com/item/%E6%A6%8E%E5%AE%AB%E7%A5%90" target="_blank" rel="noopener">榎宫祐</a>著作并负责插画的轻小说，可以算作智斗吧。</p><h4 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h4><p>我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一章，里面的词语略显粗俗（全文几乎都是乳），这个粗俗不恰到好处，让人摸不着头脑。</p><p>如果想了解这个，我认为还是看动画吧，动画做的不错，但是按照后面的情节发展，感觉是不会再动画的原因吧。感觉要读点其它类型的书了，我的价值观。。。下期读《三体》吧</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 阅读 </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -340,11 +340,11 @@
     
     
     <entry>
-      <title>openVINO的常用网址</title>
-      <link href="/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/"/>
-      <url>/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/</url>
+      <title>movidius指南</title>
+      <link href="/2018/11/08/openVINO/movidius%E6%8C%87%E5%8D%97/"/>
+      <url>/2018/11/08/openVINO/movidius%E6%8C%87%E5%8D%97/</url>
       
-        <content type="html"><![CDATA[<p>1、openVINO官网</p><p><a href="https://software.intel.com/openvino-toolkit" target="_blank" rel="noopener">https://software.intel.com/openvino-toolkit</a></p><p>2、movidius神经网络加速器</p><p><a href="https://www.movidius.com/" target="_blank" rel="noopener">https://www.movidius.com/</a></p>]]></content>
+        <content type="html"><![CDATA[<p>1、使用前检查movidius NSC所支持的USB，如果USB3.0插在USB3.1上，型号可能对不上，导致SDK找不到设备。</p>]]></content>
       
       
       <categories>
@@ -359,11 +359,11 @@
     
     
     <entry>
-      <title>movidius指南</title>
-      <link href="/2018/11/08/openVINO/movidius%E6%8C%87%E5%8D%97/"/>
-      <url>/2018/11/08/openVINO/movidius%E6%8C%87%E5%8D%97/</url>
+      <title>openVINO的常用网址</title>
+      <link href="/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/"/>
+      <url>/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/</url>
       
-        <content type="html"><![CDATA[<p>1、使用前检查movidius NSC所支持的USB，如果USB3.0插在USB3.1上，型号可能对不上，导致SDK找不到设备。</p>]]></content>
+        <content type="html"><![CDATA[<p>1、openVINO官网</p><p><a href="https://software.intel.com/openvino-toolkit" target="_blank" rel="noopener">https://software.intel.com/openvino-toolkit</a></p><p>2、movidius神经网络加速器</p><p><a href="https://www.movidius.com/" target="_blank" rel="noopener">https://www.movidius.com/</a></p>]]></content>
       
       
       <categories>

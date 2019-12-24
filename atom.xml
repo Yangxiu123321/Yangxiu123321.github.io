@@ -42,9 +42,9 @@
     <link href="http://blog.modmvp.club/2019/12/24/hexo/hexo%E9%85%8D%E7%BD%AE/"/>
     <id>http://blog.modmvp.club/2019/12/24/hexo/hexo%E9%85%8D%E7%BD%AE/</id>
     <published>2019-12-24T11:30:24.000Z</published>
-    <updated>2019-12-24T11:48:43.830Z</updated>
+    <updated>2019-12-24T13:21:47.576Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="添加在线聊天功能DaoVoice"><a href="#添加在线聊天功能DaoVoice" class="headerlink" title="添加在线聊天功能DaoVoice"></a>添加在线聊天功能DaoVoice</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/c3c408ac0bfa</span></span><br></pre></td></tr></table></figure><h4 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以使用百度云域名</span><br></pre></td></tr></table></figure><h4 id="添加鼠标点击爱心效果"><a href="#添加鼠标点击爱心效果" class="headerlink" title="添加鼠标点击爱心效果"></a>添加鼠标点击爱心效果</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/6d94011ffc6f</span></span><br></pre></td></tr></table></figure><h4 id="添加文章底部版权"><a href="#添加文章底部版权" class="headerlink" title="添加文章底部版权"></a>添加文章底部版权</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.pangao.vip/Hexo博客NexT主题美化之自定义文章底部版权声明/</span></span><br></pre></td></tr></table></figure><h4 id="markdown中显示图片"><a href="#markdown中显示图片" class="headerlink" title="markdown中显示图片"></a>markdown中显示图片</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/3e9d614c1e77</span></span><br></pre></td></tr></table></figure><p>插件之间会冲突，导致markdown自带的引用图片的命令会失效，可以使用标签页来引用</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;%asset_img 图片名称.bmp 图片描述%&#125;</span><br></pre></td></tr></table></figure><p>图片名称.bmp需要放在与该markdown相同名称的文件夹下</p><h4 id="加入搜索功能"><a href="#加入搜索功能" class="headerlink" title="加入搜索功能"></a>加入搜索功能</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/lijing742180/article/details/87970909</span></span><br></pre></td></tr></table></figure><h4 id="收录百度、Google"><a href="#收录百度、Google" class="headerlink" title="收录百度、Google"></a>收录百度、Google</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/8c0707ce5da4</span></span><br><span class="line"><span class="attribute">https://albenw.github.io/posts/be8242cc/</span></span><br></pre></td></tr></table></figure><h4 id="评论与统计"><a href="#评论与统计" class="headerlink" title="评论与统计"></a>评论与统计</h4><p>leancloud统计、Valine评论系统</p><h4 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/coder_jeremy/article/details/83588604</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h4 id="添加在线聊天功能DaoVoice"><a href="#添加在线聊天功能DaoVoice" class="headerlink" title="添加在线聊天功能DaoVoice"></a>添加在线聊天功能DaoVoice</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/c3c408ac0bfa</span></span><br></pre></td></tr></table></figure><h4 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以使用百度云域名</span><br></pre></td></tr></table></figure><h4 id="添加鼠标点击爱心效果"><a href="#添加鼠标点击爱心效果" class="headerlink" title="添加鼠标点击爱心效果"></a>添加鼠标点击爱心效果</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/6d94011ffc6f</span></span><br></pre></td></tr></table></figure><h4 id="添加文章底部版权"><a href="#添加文章底部版权" class="headerlink" title="添加文章底部版权"></a>添加文章底部版权</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.pangao.vip/Hexo博客NexT主题美化之自定义文章底部版权声明/</span></span><br></pre></td></tr></table></figure><h4 id="markdown中显示图片"><a href="#markdown中显示图片" class="headerlink" title="markdown中显示图片"></a>markdown中显示图片</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/3e9d614c1e77</span></span><br></pre></td></tr></table></figure><p>插件之间会冲突，导致markdown自带的引用图片的命令会失效，可以使用标签页来引用</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;%asset_img 图片名称.bmp 图片描述%&#125;</span><br></pre></td></tr></table></figure><p>图片名称.bmp需要放在与该markdown相同名称的文件夹下</p><h5 id="添加pdf"><a href="#添加pdf" class="headerlink" title="添加pdf"></a>添加pdf</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pdf ./pdf名字.pdf %&#125;</span><br></pre></td></tr></table></figure><p>pdf文件和图片一样需要放到同名文件夹下</p><h4 id="加入搜索功能"><a href="#加入搜索功能" class="headerlink" title="加入搜索功能"></a>加入搜索功能</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/lijing742180/article/details/87970909</span></span><br></pre></td></tr></table></figure><h4 id="收录百度、Google"><a href="#收录百度、Google" class="headerlink" title="收录百度、Google"></a>收录百度、Google</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.jianshu.com/p/8c0707ce5da4</span></span><br><span class="line"><span class="attribute">https://albenw.github.io/posts/be8242cc/</span></span><br></pre></td></tr></table></figure><h4 id="评论与统计"><a href="#评论与统计" class="headerlink" title="评论与统计"></a>评论与统计</h4><p>leancloud统计、Valine评论系统</p><h4 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://blog.csdn.net/coder_jeremy/article/details/83588604</span></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -63,17 +63,13 @@
     <link href="http://blog.modmvp.club/2019/12/23/opencv/opencv%E7%BC%96%E8%AF%91/"/>
     <id>http://blog.modmvp.club/2019/12/23/opencv/opencv%E7%BC%96%E8%AF%91/</id>
     <published>2019-12-23T01:14:01.000Z</published>
-    <updated>2019-12-23T14:07:43.511Z</updated>
+    <updated>2019-12-24T13:23:57.883Z</updated>
     
     <content type="html"><![CDATA[<h4 id="源码下载"><a href="#源码下载" class="headerlink" title="源码下载"></a>源码下载</h4><p>到码云下载OpenCV的镜像源码和扩展包OpenCV_Contrib，速度比较快</p><p><a href="https://gitee.com/mirrors/opencv" target="_blank" rel="noopener">opencv下载</a></p><p><a href="https://gitee.com/mirrors/opencv_contrib" target="_blank" rel="noopener">opencv_contrib下载</a></p><h4 id="Cmake编译"><a href="#Cmake编译" class="headerlink" title="Cmake编译"></a>Cmake编译</h4><p>打开cmake-gui，连上外网.先点击configure，等完成后，在CMAKE的GUI中搜索OPENCV_EXTRA_ MODULES_PATH，指定该路径为opencv_contrib/modules。点击configure设置x64或者x86.注意安装的位置变量CMAKE_INSTALL_PREFIX.之后正常编译就行。</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h4 id=&quot;源码下载&quot;&gt;&lt;a href=&quot;#源码下载&quot; class=&quot;headerlink&quot; title=&quot;源码下载&quot;&gt;&lt;/a&gt;源码下载&lt;/h4&gt;&lt;p&gt;到码云下载OpenCV的镜像源码和扩展包OpenCV_Contrib，速度比较快&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https
-      
+      opencv编译的时候添加opencv_contrib扩展包
     
     </summary>
     
@@ -84,45 +80,17 @@
   </entry>
   
   <entry>
-    <title>游戏人生</title>
-    <link href="http://blog.modmvp.club/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/"/>
-    <id>http://blog.modmvp.club/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/</id>
-    <published>2019-12-22T01:14:01.000Z</published>
-    <updated>2019-12-19T11:08:08.688Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>《NO GAME NO LIFE 游戏人生》是<a href="https://baike.baidu.com/item/%E6%A6%8E%E5%AE%AB%E7%A5%90" target="_blank" rel="noopener">榎宫祐</a>著作并负责插画的轻小说，可以算作智斗吧。</p><h4 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h4><p>我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一章，里面的词语略显粗俗（全文几乎都是乳），这个粗俗不恰到好处，让人摸不着头脑。</p><p>如果想了解这个，我认为还是看动画吧，动画做的不错，但是按照后面的情节发展，感觉是不会再动画的原因吧。感觉要读点其它类型的书了，我的价值观。。。下期读《三体》吧</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;《NO GAME NO LIFE 游戏人生》是&lt;a href=&quot;https://baike.baidu.com/item/%E6%A6%8E
-      
-    
-    </summary>
-    
-    
-      <category term="阅读" scheme="http://blog.modmvp.club/categories/%E9%98%85%E8%AF%BB/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>opencv访问像素方法</title>
     <link href="http://blog.modmvp.club/2019/12/22/opencv/opencv%E8%AE%BF%E9%97%AE%E5%83%8F%E7%B4%A0%E6%96%B9%E6%B3%95/"/>
     <id>http://blog.modmvp.club/2019/12/22/opencv/opencv%E8%AE%BF%E9%97%AE%E5%83%8F%E7%B4%A0%E6%96%B9%E6%B3%95/</id>
     <published>2019-12-22T01:14:01.000Z</published>
-    <updated>2019-12-23T14:20:55.806Z</updated>
+    <updated>2019-12-24T13:25:03.834Z</updated>
     
     <content type="html"><![CDATA[<h4 id="at"><a href="#at" class="headerlink" title="at"></a>at</h4><p>灰度图像：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">image.at&lt;uchar&gt;(y,x)</span><br></pre></td></tr></table></figure><p>彩色图像</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">image.at&lt;Vec3b&gt;(y,x)[<span class="number">0</span>]</span><br><span class="line">image.at&lt;Vec3b&gt;(y,x)[<span class="number">1</span>]</span><br><span class="line">image.at&lt;Vec3b&gt;(y,x)[<span class="number">2</span>]</span><br></pre></td></tr></table></figure><p>示例</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">method_1</span><span class="params">(Mat &amp;image)</span> </span>&#123;</span><br><span class="line"><span class="keyword">double</span> t1 = getTickCount();</span><br><span class="line"><span class="keyword">int</span> w = image.cols;</span><br><span class="line"><span class="keyword">int</span> h = image.rows;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; h; row++) &#123;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; w; col++) &#123;</span><br><span class="line">Vec3b bgr = image.at&lt;Vec3b&gt;(row, col);</span><br><span class="line">bgr[<span class="number">0</span>] = <span class="number">255</span> - bgr[<span class="number">0</span>];</span><br><span class="line">bgr[<span class="number">1</span>] = <span class="number">255</span> - bgr[<span class="number">1</span>];</span><br><span class="line">bgr[<span class="number">2</span>] = <span class="number">255</span> - bgr[<span class="number">2</span>];</span><br><span class="line">image.at&lt;Vec3b&gt;(row, col) = bgr;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">double</span> t2 = getTickCount();</span><br><span class="line"><span class="keyword">double</span> t = ((t2 - t1) / getTickFrequency()) * <span class="number">1000</span>;</span><br><span class="line"><span class="built_in">ostringstream</span> ss;</span><br><span class="line">ss &lt;&lt; <span class="string">"Execute time : "</span> &lt;&lt; <span class="built_in">std</span>::fixed &lt;&lt; <span class="built_in">std</span>::setprecision(<span class="number">2</span>) &lt;&lt; t &lt;&lt; <span class="string">" ms "</span>;</span><br><span class="line">putText(image, ss.str(), Point(<span class="number">20</span>, <span class="number">20</span>), FONT_HERSHEY_SIMPLEX, <span class="number">0.75</span>, Scalar(<span class="number">0</span>, <span class="number">0</span>, <span class="number">255</span>), <span class="number">2</span>, <span class="number">8</span>);</span><br><span class="line">imshow(<span class="string">"result_at"</span>, image);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="迭代器MatIterator"><a href="#迭代器MatIterator" class="headerlink" title="迭代器MatIterator_"></a>迭代器MatIterator_<t></t></h4><p>示例</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">method_2</span><span class="params">(Mat &amp;image)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">double</span> t1 = getTickCount();</span><br><span class="line">MatIterator_&lt;Vec3b&gt; iter = image.begin&lt;Vec3b&gt;();</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (; iter != image.end&lt;Vec3b&gt;(); iter++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">&#123;</span><br><span class="line">(*iter)[i] = <span class="number">255</span> - (*iter)[i];</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">double</span> t2 = getTickCount();</span><br><span class="line"><span class="keyword">double</span> t = ((t2 - t1) / getTickFrequency()) * <span class="number">1000</span>;</span><br><span class="line"><span class="built_in">ostringstream</span> ss;</span><br><span class="line">ss &lt;&lt; <span class="string">"Execute time : "</span> &lt;&lt; <span class="built_in">std</span>::fixed &lt;&lt; <span class="built_in">std</span>::setprecision(<span class="number">2</span>) &lt;&lt; t &lt;&lt; <span class="string">" ms "</span>;</span><br><span class="line">putText(image, ss.str(), Point(<span class="number">20</span>, <span class="number">20</span>), FONT_HERSHEY_SIMPLEX, <span class="number">0.75</span>, Scalar(<span class="number">0</span>, <span class="number">0</span>, <span class="number">255</span>), <span class="number">2</span>, <span class="number">8</span>);</span><br><span class="line">imshow(<span class="string">"result_iter"</span>, image);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h4><p>示例（灰度图像）</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">method_3</span><span class="params">(Mat &amp;image)</span> </span>&#123;</span><br><span class="line"><span class="keyword">double</span> t1 = getTickCount();</span><br><span class="line"><span class="keyword">int</span> w = image.cols;</span><br><span class="line"><span class="keyword">int</span> h = image.rows;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; h; row++) &#123;</span><br><span class="line">uchar* uc_pixel = image.data + row * image.step;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; w; col++) &#123;</span><br><span class="line">uc_pixel[<span class="number">0</span>] = <span class="number">255</span> - uc_pixel[<span class="number">0</span>];</span><br><span class="line">uc_pixel[<span class="number">1</span>] = <span class="number">255</span> - uc_pixel[<span class="number">1</span>];</span><br><span class="line">uc_pixel[<span class="number">2</span>] = <span class="number">255</span> - uc_pixel[<span class="number">2</span>];</span><br><span class="line">uc_pixel += <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">double</span> t2 = getTickCount();</span><br><span class="line"><span class="keyword">double</span> t = ((t2 - t1) / getTickFrequency()) * <span class="number">1000</span>;</span><br><span class="line"><span class="built_in">ostringstream</span> ss;</span><br><span class="line">ss &lt;&lt; <span class="string">"Execute time : "</span> &lt;&lt; <span class="built_in">std</span>::fixed &lt;&lt; <span class="built_in">std</span>::setprecision(<span class="number">2</span>) &lt;&lt; t &lt;&lt; <span class="string">" ms "</span>;</span><br><span class="line">putText(image, ss.str(), Point(<span class="number">20</span>, <span class="number">20</span>), FONT_HERSHEY_SIMPLEX, <span class="number">0.75</span>, Scalar(<span class="number">0</span>, <span class="number">0</span>, <span class="number">255</span>), <span class="number">2</span>, <span class="number">8</span>);</span><br><span class="line">imshow(<span class="string">"result_ptr"</span>, image);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>示例（彩色）</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; height; i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; width; j++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//取出图片第i行第j列的像素</span></span><br><span class="line">uchar *p = SrcImage.ptr&lt;uchar&gt;(i,j);</span><br><span class="line">                        <span class="comment">//当为单通道图片时，直接用p[0]访问</span></span><br><span class="line"><span class="keyword">if</span> (i == j)  <span class="comment">//当i=j时 将像素赋值为红色</span></span><br><span class="line">&#123;</span><br><span class="line">p[<span class="number">0</span>] = <span class="number">0</span>;<span class="comment">//B</span></span><br><span class="line">p[<span class="number">1</span>] = <span class="number">0</span>;<span class="comment">//G</span></span><br><span class="line">p[<span class="number">2</span>] = <span class="number">255</span>;<span class="comment">//R</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h4 id=&quot;at&quot;&gt;&lt;a href=&quot;#at&quot; class=&quot;headerlink&quot; title=&quot;at&quot;&gt;&lt;/a&gt;at&lt;/h4&gt;&lt;p&gt;灰度图像：&lt;/p&gt;
-&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;
-      
+      opencv通过at、迭代器、指针来操作像素
     
     </summary>
     
@@ -157,6 +125,30 @@
     
     
       <category term="ppm图片" scheme="http://blog.modmvp.club/tags/ppm%E5%9B%BE%E7%89%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>游戏人生</title>
+    <link href="http://blog.modmvp.club/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/"/>
+    <id>http://blog.modmvp.club/2019/12/22/%E9%98%85%E8%AF%BB/%E6%B8%B8%E6%88%8F%E4%BA%BA%E7%94%9F/</id>
+    <published>2019-12-22T01:14:01.000Z</published>
+    <updated>2019-12-19T11:08:08.688Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>《NO GAME NO LIFE 游戏人生》是<a href="https://baike.baidu.com/item/%E6%A6%8E%E5%AE%AB%E7%A5%90" target="_blank" rel="noopener">榎宫祐</a>著作并负责插画的轻小说，可以算作智斗吧。</p><h4 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h4><p>我最近感觉是中了智斗小说的毒了，感觉看完《实教》之后，还是放不下，所以也把《游戏人生》给追完了。当读到一半的时候，感觉有点要崩溃的感觉，不过，我向来是有始有终，所以也就硬着头皮上了。书中的作者感觉脑回路和我对不上，有些发言感觉不正常，感觉不止【空白】是经常呆在家里的样子。对于【为过去付出代价】这一章，里面的词语略显粗俗（全文几乎都是乳），这个粗俗不恰到好处，让人摸不着头脑。</p><p>如果想了解这个，我认为还是看动画吧，动画做的不错，但是按照后面的情节发展，感觉是不会再动画的原因吧。感觉要读点其它类型的书了，我的价值观。。。下期读《三体》吧</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;《NO GAME NO LIFE 游戏人生》是&lt;a href=&quot;https://baike.baidu.com/item/%E6%A6%8E
+      
+    
+    </summary>
+    
+    
+      <category term="阅读" scheme="http://blog.modmvp.club/categories/%E9%98%85%E8%AF%BB/"/>
+    
     
   </entry>
   
@@ -377,31 +369,6 @@
   </entry>
   
   <entry>
-    <title>openVINO的常用网址</title>
-    <link href="http://blog.modmvp.club/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/"/>
-    <id>http://blog.modmvp.club/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/</id>
-    <published>2018-11-08T12:55:30.000Z</published>
-    <updated>2019-01-26T05:35:09.959Z</updated>
-    
-    <content type="html"><![CDATA[<p>1、openVINO官网</p><p><a href="https://software.intel.com/openvino-toolkit" target="_blank" rel="noopener">https://software.intel.com/openvino-toolkit</a></p><p>2、movidius神经网络加速器</p><p><a href="https://www.movidius.com/" target="_blank" rel="noopener">https://www.movidius.com/</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;1、openVINO官网&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://software.intel.com/openvino-toolkit&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://software.intel.com/openv
-      
-    
-    </summary>
-    
-    
-      <category term="openVINO" scheme="http://blog.modmvp.club/categories/openVINO/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>movidius指南</title>
     <link href="http://blog.modmvp.club/2018/11/08/openVINO/movidius%E6%8C%87%E5%8D%97/"/>
     <id>http://blog.modmvp.club/2018/11/08/openVINO/movidius%E6%8C%87%E5%8D%97/</id>
@@ -416,6 +383,31 @@
       
         &lt;p&gt;1、使用前检查movidius NSC所支持的USB，如果USB3.0插在USB3.1上，型号可能对不上，导致SDK找不到设备。&lt;/p&gt;
 
+      
+    
+    </summary>
+    
+    
+      <category term="openVINO" scheme="http://blog.modmvp.club/categories/openVINO/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>openVINO的常用网址</title>
+    <link href="http://blog.modmvp.club/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/"/>
+    <id>http://blog.modmvp.club/2018/11/08/openVINO/openVINO%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/</id>
+    <published>2018-11-08T12:55:30.000Z</published>
+    <updated>2019-01-26T05:35:09.959Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、openVINO官网</p><p><a href="https://software.intel.com/openvino-toolkit" target="_blank" rel="noopener">https://software.intel.com/openvino-toolkit</a></p><p>2、movidius神经网络加速器</p><p><a href="https://www.movidius.com/" target="_blank" rel="noopener">https://www.movidius.com/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、openVINO官网&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://software.intel.com/openvino-toolkit&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://software.intel.com/openv
       
     
     </summary>
